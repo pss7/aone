@@ -22,10 +22,10 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 .state02{background-color: #ddd!important; color: #fff!important;}
 
 /* 공통 - 상단 */
-#subWrap .topBox{position: relative; height: 530px; margin-bottom: 130px; z-index: 999; overflow: hidden;}
+#subWrap .topBox{position: relative; height: 530px; margin-bottom: 130px; z-index: 999; overflow: hidden; z-index: 1;}
 #subWrap .topBox img{position: absolute; top:0; left:0; right:0; bottom: 0;  width: 100%; height: 100%; object-fit: cover; transform: scale(1.5); transition: all 5s;}
 #subWrap .topBox.active img{transform: scale(1);}
-#subWrap .topBox .textBox{width: 100%; position: absolute; top : 54%; left: 50%; transform: translate(-50%, -50%); text-align: center;}
+#subWrap .topBox .textBox{width: 100%; position: absolute; top : 54%; left: 50%; transform: translate(-50%, -50%); text-align: center; z-index: 9;} 
 #subWrap .topBox .textBox span{display: block; font-size: 18px; color: #fff; font-weight: 500; animation: textEffect 2s .7s both;}
 #subWrap .topBox .textBox h2{margin-bottom: 20px; font-size: 56px; color: #fff;}
 #subWrap .topBox .textBox em{display: inline-block; animation: textEffect 2s both;}
