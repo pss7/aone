@@ -56,9 +56,9 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 
   #subWrap .topBox{height: 360px;}
 
-  #subWrap .topBox .textBox{top: 49%;}
+  #subWrap .topBox .textBox{top: 50%;}
   #subWrap .topBox .textBox span{font-size: 16px;}
-  #subWrap .topBox .textBox h2{font-size: 36px;}
+  #subWrap .topBox .textBox h2{margin-bottom: 14px; font-size: 36px;}
  
 }
 
@@ -79,7 +79,7 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 @media (max-width: 480px){
 
   #subWrap .topBox{height: 280px; margin-bottom: 70px;}
-  #subWrap .topBox .textBox h2{font-size: 24px;}
+  #subWrap .topBox .textBox h2{margin-bottom: 10px; font-size: 24px;}
 
 }
 
