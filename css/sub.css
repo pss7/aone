@@ -233,7 +233,7 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 }
 
 /* 로그인 */
-#subWrap .loginBox{position: relative; margin-bottom: -150px; padding: 190px 0 109px; background:#020203 url(../images/sub/bg01.jpg)no-repeat center top; background-size: cover; z-index: 9;}
+#subWrap .loginBox{position: relative; margin-bottom: -150px; padding: 200px 0 109px; background:#020203 url(../images/sub/bg01.jpg)no-repeat center top; background-size: cover; z-index: 9;}
 .loginBox .container{max-width: 600px;}
 .loginBox .titleBox .title{color: #fff;}
 .loginBox .titleBox{margin-bottom: 60px;}
