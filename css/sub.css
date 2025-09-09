@@ -1,0 +1,1653 @@
+@charset "UTF-8";
+
+/* 공통 */
+button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3B3B3!important; cursor: auto;}
+#wrap {display: flex; flex-direction: column; min-height: 100%;}
+#subWrap{flex: 1; padding: 0 0 150px;}
+
+@media (max-width: 1199px){
+
+  #subWrap{margin-top: 49px;}
+
+}
+
+@media (max-width: 414px){
+
+  #subWrap{padding: 0 0 150px;}
+
+}
+
+/* 공통 - 상태 */
+.state01{color: #5D8EFF!important; background-color: #E9F0FF!important;}
+.state02{background-color: #ddd!important; color: #fff!important;}
+
+/* 공통 - 상단 */
+#subWrap .topBox{position: relative; height: 530px; margin-bottom: 130px; z-index: 999; overflow: hidden;}
+#subWrap .topBox img{position: absolute; top:0; left:0; right:0; bottom: 0;  width: 100%; height: 100%; object-fit: cover; transform: scale(1.5); transition: all 5s;}
+#subWrap .topBox.active img{transform: scale(1);}
+#subWrap .topBox .textBox{width: 100%; position: absolute; top : 54%; left: 50%; transform: translate(-50%, -50%); text-align: center;}
+#subWrap .topBox .textBox span{display: block; font-size: 18px; color: #fff; font-weight: 500; animation: textEffect 2s .7s both;}
+#subWrap .topBox .textBox h2{margin-bottom: 20px; font-size: 56px; color: #fff;}
+#subWrap .topBox .textBox em{display: inline-block; animation: textEffect 2s both;}
+#subWrap .topBox .textBox em:nth-child(1){animation-delay: .1s;}
+#subWrap .topBox .textBox em:nth-child(2){animation-delay: .2s;}
+#subWrap .topBox .textBox em:nth-child(3){animation-delay: .3s;}
+#subWrap .topBox .textBox em:nth-child(4){animation-delay: .4s;}
+#subWrap .topBox .textBox em:nth-child(5){animation-delay: .5s;}
+#subWrap .topBox .textBox em:nth-child(6){animation-delay: .6s;}
+#subWrap .topBox .textBox em:nth-child(7){animation-delay: .7s;}
+#subWrap .topBox .textBox em:nth-child(8){animation-delay: .8s;}
+
+@keyframes textEffect {
+
+  0%{
+   opacity: 0;
+   transform: translateY(50px); 
+  }
+  100%{
+   opacity: 1;
+   transform: translateY(0); 
+  }
+  
+}
+
+@media (max-width: 1199px){
+
+  #subWrap .topBox{height: 360px;}
+
+  #subWrap .topBox .textBox{top: 49%;}
+  #subWrap .topBox .textBox span{font-size: 16px;}
+  #subWrap .topBox .textBox h2{font-size: 36px;}
+ 
+}
+
+@media (max-width:1024px){
+
+  #subWrap .topBox{margin-bottom: 100px;}
+
+}
+
+@media (max-width: 767px){
+
+  #subWrap .topBox{height: 350px; margin-bottom: 100px;}
+  #subWrap .topBox .textBox span{font-size: 16px;}
+  #subWrap .topBox .textBox h2{font-size: 30px;}
+
+}
+
+@media (max-width: 480px){
+
+  #subWrap .topBox{height: 280px; margin-bottom: 70px;}
+  #subWrap .topBox .textBox h2{font-size: 24px;}
+
+}
+
+/* 공통 - 헤더 */
+#headerWrap{box-shadow: 0 10px 10px rgba(0, 0, 0, .05)!important;}
+#headerWrap .menuBox .menuList02,
+#headerWrap{background-color: rgba(255,255,255,.6);}
+#headerWrap .loginBox .signin{background-color: #F8F8F8;}
+#headerWrap .loginBox .signin,
+#headerWrap .menuBox .menuList02 li h3 a,
+#headerWrap .menuBox .menuList li h2 a{color: #333D4B;}
+#headerWrap .menuBox .menuList li h2.active a::after{border-color: #333D4B;}
+
+/* 공통 - 버튼 */
+.button{padding: 0 40px; height: 78px; line-height: 78px; color: #fff; background: linear-gradient(to right, #905DFF, #5E79FF); text-align: center; border-radius: 50px; font-size: 25px; font-weight: 700;}
+
+@media (max-width: 1024px){
+
+  .button{height: 65px; line-height: 65px; font-size: 20px;}
+
+}
+
+@media (max-width: 767px){
+
+  .button{padding: 0 35px; font-size: 18px;}
+
+}
+
+@media (max-width: 480px){
+
+  .button{height: 50px; line-height: 52px; padding: 0 20px; font-size: 16px;}
+
+}
+
+@media (max-width: 360px){
+
+  .button{height: 40px; line-height: 40px; padding: 0 15px; font-size: 14px;}
+
+}
+
+/* 공통 - 폼 */
+.formBox{margin-bottom: 25px;}
+.formBox span{display: block; margin-bottom: 7px; font-weight: 500; font-size: 18px; color: #000;}
+.inputLayoutBox{display: flex; gap: 0 15px;}
+.inputTextBox input{padding:0 20px 0 16px; width: 100%; height: 60px; border: 1px solid #F8F8F8; font-size: 18px; font-weight: 500; border-radius: 13px; color: #000; background-color: #fff;}
+.textAreaBox textarea:focus,
+.selectBox .selectBtn:focus,
+.inputTextBox input:focus{outline: 0; border: 1px solid #5D8EFF!important;}
+.inputTextBox input::placeholder{color: #D0D0D0;}
+
+.selectBox{position: relative;}
+.selectBox .selectBtn{position: relative; padding:0 20px 0 16px; width: 100%; height: 60px; border: 1px solid #F8F8F8; font-size: 18px; font-weight: 500; border-radius: 13px; color: #D0D0D0; text-align: left; background-color: #fff;}
+.selectBox .selectBtn::after{content: ''; width: 14px; height: 9px; position: absolute; top: 50%; transform: translateY(-50%); right:20px; background: url(../images/sub/arrow_icon01.svg)no-repeat center; transition: all .3s;}
+.selectBox .selectBtn.active::after{transform: translateY(-50%) rotate(-180deg);}
+.selectBox .selectList{display: none; padding: 20px 15px; position: absolute; top:63px; left:0; right:0; border: 1px solid #E3E3E3; background-color: #fff; border-radius: 16px; z-index: 9999;}
+.selectBox .selectList li{margin-bottom: 15px;}
+.selectBox .selectList li:last-child{margin-bottom: 0;}
+.selectBox .selectList li .btn{display: block; padding: 0 10px 0 15px;  width: 100%; height: 43px; text-align: left; font-size: 18px; font-weight: 500; color: #000; border-radius: 8px; transition: all .3s;}
+.selectBox .selectList li .btn:hover{background-color: #FFF7E5;}
+
+.inputChkWrap{margin-bottom: 15px; padding: 16px; border-radius: 13px; border: 1px solid #F8F8F8; background-color: #fff;}
+.inputChkWrap .inputChkBox{width: 100%; display: flex; align-items: center; justify-content: space-between; }
+.inputChkWrap:last-child{margin-bottom: 0;}
+.inputChkWrap .agreeView{font-weight: 500; color: #B3B3B3; line-height: 1;}
+.inputChkWrap p{margin-top: 16px; font-weight: 500; color: #B3B3B3;}
+.inputChkBox label{flex-wrap: wrap; display: flex; align-items: center; gap: 5px 8px; font-weight: 500; color: #000; font-size: 16px; cursor: pointer;}
+.inputChkBox label::before{content: ''; width: 24px; height: 24px; border: 1px solid #E3E3E3; border-radius: 6px; background-color: #fff;}
+.inputChkBox input:checked + label::before{content: '\2713'; width: 26px; height: 26px; background: #5D8EFF; border: 0; color: #fff; text-align: center; line-height: 26px; font-size: 20px;}
+.inputChkBox label em{font-weight: 500; color: #D0D0D0; font-size: 16px;}
+
+
+@media (max-width: 767px){
+
+  .selectBox .selectBtn,
+  .selectBox .selectList li .btn,
+  .inputTextBox input,
+  .formBox span{font-size: 16px;}
+  .inputChkWrap,
+  .inputTextBox input{border-radius: 8px;}
+  .inputChkBox label::before{margin-top: -1px; width: 20px; height: 20px; border-radius: 3px;}
+  .inputChkBox input:checked + label::before{width: 22px; height: 22px; line-height: 24px; font-size: 16px;}
+  .inputChkWrap{padding: 17px 16px;}
+  
+  
+}
+
+@media (max-width: 480px){
+
+  .selectBox .selectBtn,
+  .inputTextBox input{padding: 0 20px 0 10px;}
+  .inputChkBox label em,
+  .inputChkWrap p,
+  .inputChkBox label,
+  .inputChkWrap .agreeView,
+  .selectBox .selectBtn,
+  .selectBox .selectList li .btn,
+  .inputTextBox input,
+  .formBox span{font-size: 14px;}
+  .selectBox .selectBtn,
+  .inputTextBox input{height: 55px;}
+  .inputChkWrap{padding: 16px;}
+
+  .inputChkBox label{gap: 0 5px;}
+  .inputChkBox label::before{width: 18px; height: 18px;}
+  .inputChkBox input:checked + label::before{width: 20px; height: 20px; line-height: 20px; font-size: 14px;}
+
+}
+
+@media (max-width: 414px){
+
+  .inputChkBox label::before{width: 15px; height: 15px;}
+  .inputChkBox input:checked + label::before{width: 17px; height: 17px; line-height: 18px;}
+
+}
+
+@media (max-width: 360px){
+
+  .inputChkWrap .inputChkBox{flex-direction: column; align-items: flex-start; gap: 10px 0;}
+  .inputChkWrap p{margin-top: 10px;}
+
+}
+
+@media (max-width: 340px){
+
+  .inputChkWrap{padding: 10px;}
+  .inputChkBox label em,
+  .inputChkWrap .agreeView,
+  .inputChkWrap p,
+  .inputChkBox label{font-size: 12px;}
+
+}
+
+/* 공통 - 제목 */
+.title02{margin: 20px 0; font-size: 35px; font-weight: 700; color: #000;}
+
+@media (max-width: 1199px){
+
+  .title02{font-size: 30px;}
+  
+}
+
+@media (max-width: 767px){
+
+  .title02{font-size: 22px;}
+  
+}
+
+@media (max-width: 480px){
+
+  .title02{font-size: 18px;}
+  
+}
+
+/* 로그인 */
+#subWrap .loginBox{margin-bottom: -150px; padding: 167px 0 109px; background:#020203 url(../images/sub/bg01.jpg)no-repeat center top; background-size: cover;}
+.loginBox .container{max-width: 550px;}
+.loginBox .titleBox .title{color: #fff;}
+.loginBox .titleBox{margin-bottom: 60px; letter-spacing: -1px;}
+.loginBox .loginBtn{display: block; width: 100%; margin-bottom: 25px; height: 60px; color: #fff; border-radius:50px; text-align: center; font-size: 20px; font-weight: 600;}
+.loginBox .infoText{text-align: center; color: #fff; font-weight: 500;}
+.loginBox .infoText a{color: #fff; text-decoration: underline;}
+.loginBox .formBox span{color: #fff;}
+
+@media (max-width: 1024px){
+
+  .loginBox .container{max-width: 100%;}
+  .loginBox .loginBtn{font-size: 18px;}
+
+  .loginBox .titleBox .title{font-size: 28px;}
+
+}
+
+@media (max-width: 767px){
+
+  #subWrap .loginBox{padding: 120px 0 109px;}
+  .loginBox .loginBtn{height: 50px; border-radius: 8px; font-size: 16px;}
+  .loginBox .titleBox .title{font-size: 24px;}
+
+}
+
+@media (max-width: 480px){
+
+  #subWrap .loginBox{padding: 100px 0 109px;}
+  .loginBox .titleBox .title{font-size: 22px;}
+
+}
+
+@media (max-width: 414px){
+
+  .loginBox .titleBox .title{font-size: 20px;}
+
+}
+
+/* 이벤트 */
+.eventBox .event_List{display: flex; flex-wrap: wrap; gap: 72px 2.67%;}
+.eventBox .event_List li{width: 31.55%;}
+.eventBox .event_List li a{display: block;}
+.eventBox .event_List li a .imgBox{margin-bottom: 20px; position: relative; height: 0; padding-top: 57%; border-radius: 20px; overflow: hidden;}
+.eventBox .event_List li a .imgBox img{position: absolute; top:0; left:0; right:0; bottom: 0; width: 100%; height: 100%; object-fit: cover;}
+.eventBox .event_List li a .textBox h3{margin-bottom: 6px; font-size: 20px; font-weight: 700; color: #000; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.eventBox .event_List li a .textBox .date{font-size: 18px; font-weight: 600; color: #A6A6A6;}
+
+@media (max-width: 1024px){
+
+  .eventBox .event_List li a .textBox h3{font-size: 18px;}
+  .eventBox .event_List li a .textBox .date{font-size: 16px;}
+
+}
+
+@media (max-width: 767px){
+
+  .eventBox .event_List{gap: 60px 3%}
+  .eventBox .event_List li{width: 48.5%;}
+
+}
+
+@media (max-width: 480px){
+
+  .eventBox .event_List{gap: 60px 0}
+  .eventBox .event_List li{width: 100%;}
+
+}
+
+@media (max-width: 414px){
+
+  .eventBox .event_List{gap: 30px 0}
+  .eventBox .event_List li a .imgBox{margin-bottom: 13px;}
+  .eventBox .event_List li a .textBox h3{ margin-bottom: 0;font-size: 16px;}
+  .eventBox .event_List li a .textBox .date{font-size: 14px;}
+
+}
+
+/* 금융상품 */
+.productBox .top{position: relative; margin-bottom: 32px; padding: 40px 20px 20px 38px; height: 250px; border-radius: 20px; background-color: #5D8EFF;}
+.productBox .top::after{content: ''; width: 303px; height: 228px; position: absolute; top:12px; right:56px; background: url(../images/sub/product_icon01.svg)no-repeat center; background-size: contain;}
+.productBox .top span{margin-bottom: 15px; display: block; font-size: 20px; font-weight: 700; color: #fff;}
+.productBox .top .title{font-size: 36px; font-weight: 700; color: #fff; line-height: 1.4;}
+.productBox .productList{margin-bottom: 60px; display: flex; flex-wrap: wrap; gap: 32px 2.8%;}
+.productBox .productList li{width: 48.6%;}
+.productBox .productList li a{display: block; position: relative; border: 1px solid #DDDDDD; border-radius: 20px; overflow: hidden;}
+.productBox .productList li a:hover{border: 1px solid #5D8EFF;}
+.productBox .productList li a .badge{position: absolute; top:0; right:0;}
+.productBox .productList li .textBox{padding: 48px 20px 40px 48px;}
+.productBox .productList li .textBox .infoBox{margin-bottom: 10px; display: flex; gap: 0 15px;}
+.productBox .productList li .textBox .infoBox span{padding: 4px 11px; border-radius: 8px; font-weight: 500;}
+.productBox .productList li .textBox .infoBox span.best{background-color: #E9F0FF; color: #5D8EFF;}
+.productBox .productList li .textBox .infoBox span.new{background-color: #EBFAF9; color: #39B9B3;}
+.productBox .productList li .textBox h4{margin-bottom: 13px; font-size: 36px; color: #000; font-weight: 700;}
+.productBox .productList li .textBox p{font-size: 24px; font-weight: 700; color: #12124F;}
+.productBox .productList li .textBox p strong{color: #5D8EFF;}
+.productBox .productList li .infoListBox{display: flex; gap: 0 72px; padding: 42px 20px 46px 48px; background-color: #FBFBFB;}
+.productBox .productList li .infoListBox .box span{display: block; margin-bottom: 15px; font-weight: 700; color: #9E9E9E;}
+.productBox .productList li .infoListBox .box strong{font-size: 24px; font-weight: 700; color: #12124F;}
+.infoTextBox{margin-bottom: 32px; padding: 30px 20px 30px 38px; border-radius: 20px; background-color: #F9FAFB;}
+.infoTextBox h4{margin-bottom: 25px; font-size: 36px; font-weight: 700; color: #000;}
+.infoTextBox .box{margin-bottom: 40px;}
+.infoTextBox .box:last-child{margin-bottom: 0;}
+.infoTextBox .box span{display: block; margin-bottom: 5px; font-size: 20px; font-weight: 700; color: #000;}
+.infoTextBox .box em{display: block; font-size: 18px; color: #9E9E9E; font-weight: 600;}
+
+@media (max-width: 1024px){
+
+  .productBox .productList li .textBox{padding: 40px 20px 40px 35px;}
+  .productBox .productList li .textBox h4{font-size: 26px;}
+  .productBox .productList li .textBox p{font-size: 18px;}
+  .productBox .productList li .infoListBox{padding: 35px 20px 35px 35px;}
+  .productBox .productList li .infoListBox .box strong{font-size: 22px;}
+  .productBox .productList li .infoListBox .box span{margin-bottom: 10px;}
+  .productBox .productList li .infoListBox{gap: 0 35px;}
+  
+  .productBox .top span{font-size: 18px;}
+  .productBox .top .title{font-size: 32px;}
+  .productBox .top::after{top: 50%; transform: translateY(-50%); width: 250px; height: 185px;}
+
+  .infoTextBox h4{font-size: 28px;}
+  .infoTextBox .box span{font-size: 18px;}
+  .infoTextBox .box em{font-size: 16px;}
+  .infoTextBox .box{margin-bottom: 30px;}
+  .infoTextBox{padding: 25px 30px;}
+  
+}
+
+@media (max-width: 767px){
+
+  .productBox .top span{font-size: 16px;}
+  .productBox .top .title{font-size: 26px;}
+  .productBox .top{height: 200px;}
+  .productBox .top::after{top: 50%; transform: translateY(-50%); width: 200px; height: 135px;}
+  
+  .productBox .productList li{width: 100%;}
+  .productBox .productList li .textBox{padding: 35px 20px 35px 30px;}
+  .productBox .productList li .textBox h4{font-size: 24px;}
+  .productBox .productList li .textBox p{font-size: 16px;}
+  .productBox .productList li .infoListBox{padding: 30px 20px 30px 30px;}
+  .productBox .productList li .infoListBox .box strong{font-size: 18px;}
+  .productBox .productList li .infoListBox .box span{margin-bottom: 5px;}
+  .productBox .productList li .infoListBox{gap: 0 30px;}
+  .productBox .productList li a .badge{width: 100px;}
+
+  .productBox .productList{margin-bottom: 40px;}
+  .infoTextBox h4{font-size: 24px;}
+  .infoTextBox .box span{font-size: 16px;}
+  .infoTextBox .box em{font-size: 14px;}
+  .infoTextBox .box{margin-bottom: 20px;}
+  .infoTextBox{padding: 25px 30px;}
+
+}
+
+@media (max-width: 480px){
+
+  .productBox .top{height: 180px; padding: 40px 20px 20px 20px;}
+  .productBox .top::after{right: 0;}
+  .productBox .top span{font-size: 16px;}
+  .productBox .top .title{font-size: 22px;}
+
+  .productBox .productList li .textBox{padding: 35px 20px 35px 25px;}
+  .productBox .productList li .infoListBox{padding: 30px 20px 30px 25px;}
+  .productBox .productList li .textBox .infoBox span{font-size: 14px; border-radius: 5px;}
+  .productBox .productList li .textBox h4{margin-bottom: 8px; font-size: 20px;}
+  .productBox .productList li .textBox p{font-size: 14px;}
+  .productBox .productList li .infoListBox .box strong{font-size: 16px;}
+  .productBox .productList li a .badge{width: 90px;}
+
+  .productBox .productList{margin-bottom: 30px;}
+  .infoTextBox h4{font-size: 20px;}
+  .infoTextBox .box{margin-bottom: 15px;}
+  .infoTextBox{padding: 25px 20px;}
+  
+}
+
+@media (max-width: 414px){
+
+  .productBox .top{height: 150px; padding: 0 0 0 20px;  display: flex; flex-direction: column; justify-content: center;}
+  .productBox .top span{font-size: 16px;}
+  .productBox .top .title{font-size: 18px;}
+  .productBox .top::after{top: 50%; transform: translateY(-50%); width: 160px; height: 95px;}
+
+  .productBox .productList{gap: 20px 0;}
+  .productBox .productList li a .badge{width: 70px;}
+
+}
+
+@media (max-width: 320px){
+
+  .productBox .top{border-radius: 15px;}
+  .productBox .top span{font-size: 14px;}
+  .productBox .top .title{font-size: 16px;}
+  .productBox .top::after{width: 120px;}
+
+}
+
+/* 금융상품 상세 */
+.productDetailBox{max-width: 860px; padding: 0 0 30px; margin: 0 auto;}
+.productDetailBox .infoBox_03{margin:70px auto 60px; border-radius: 15px; overflow: hidden;}
+.productDetailBox .infoBox_03 .infoList{display: flex; padding: 50px 0 40px; background: url(../images/sub/bg.png)no-repeat center; background-size: cover; }
+.productDetailBox .infoBox_03 .infoList li{position: relative; flex: 1; text-align: center;}
+.productDetailBox .infoBox_03 .infoList li::after{content: ''; position: absolute; top:50%; right:0; margin-top: -10px; width: 1px; height: 20px; background-color: #fff;}
+.productDetailBox .infoBox_03 .infoList li:last-child::after{display: none;}
+.productDetailBox .infoBox_03 .infoList li span{display: block; margin-bottom: 10px; font-size: 20px; font-weight: 600; color: #fff;} 
+.productDetailBox .infoBox_03 .infoList li strong{display: block; font-size: 28px; color: #fff;}
+.productDetailBox .titleBox_01{position: relative; margin-bottom: 50px; padding: 80px 20px 75px;  border-radius: 32px; z-index: 1; overflow: hidden;}
+.productDetailBox .titleBox_01::after{content: ''; position: absolute; top:0; left:0; right:0; bottom: 0;background: url(../images/sub/bg.png) no-repeat center; background-size: cover; z-index: -1;}
+.productDetailBox .titleBox_02{position: relative; padding: 40px 20px 35px!important; border-radius: 20px!important;}
+.productDetailBox .titleBox_02::after{background: url(../images/sub/sub_bg01.jpg)no-repeat center bottom; background-size: cover; z-index: -2;}
+.productDetailBox .titleBox_02::before{content: ''; position: absolute; top:0; left:0; right:0; bottom: 0; background-color: rgba(0,0,0,.1); z-index: -1;}
+.productDetailBox .titleBox_02 .title_0102{padding: 0;}
+.productDetailBox .titleBox_02 h3{font-size: 26px!important; line-height: 1.4!important; text-align: left!important;}
+.productDetailBox .titleBox_02 span{text-align: left!important; font-size: 20px!important; font-weight: 700!important; color: #fff!important;}
+.productDetailBox .titleBox_01.active::after{transform: scale(1);}
+.productDetailBox .titleBox_01 .title_0102 {line-height: 1.2;}
+.productDetailBox .titleBox_01 .title_0102 span{display: block; margin-bottom: 8px; text-align: center; font-size: 24px; font-weight: 500; color: #fff;}
+.productDetailBox .titleBox_01 .title_0102 h3{width: 100%; text-align: center; color: #fff; font-size: 80px; font-weight: 900;}
+.productDetailBox .titleBox_01 .title_0102 em{display: block; width: 236px; height: 48px; line-height: 48px; margin: 0 auto; border-radius: 8px; font-weight: 600; font-size: 20px; color: #fff; background-color: #222; text-align: center; letter-spacing: -1px;} 
+.productDetailBox .titleBox_01 .titleInfoList_0103{display: flex; align-items: center; }
+.productDetailBox .titleBox_01 .titleInfoList_0103 li{position: relative; display: flex; flex-direction: column; justify-content: center; flex:1; height: 183px; background-color: #fff;}
+.productDetailBox .titleBox_01 .titleInfoList_0103 li:nth-child(1){border-radius: 24px 0 0 24px;}
+.productDetailBox .titleBox_01 .titleInfoList_0103 li:nth-child(3){border-radius: 0 24px 24px 0;}
+.productDetailBox .titleBox_01 .titleInfoList_0103 li::after{content: ''; position: absolute; top:53px; right:1px; width: 1px; height: 83px; background-color: #ddd;} 
+.productDetailBox .titleBox_01 .titleInfoList_0103 li:last-child:after{display: none;}
+.productDetailBox .titleBox_01 .titleInfoList_0103 li span{margin-bottom: 10px; display: block; font-size: 20px; font-weight: 600; color: #222; text-align: center;}
+.productDetailBox .titleBox_01 .titleInfoList_0103 li strong{font-size: 32px; font-weight: 700; text-align: center; color: #FF5402; letter-spacing: -1px;}
+.productDetailBox .infoBox_02{margin-bottom: 70px;}
+.productDetailBox .infoBox_02 .sectionText{margin-bottom: 20px; display: inline-block; padding: 5px 25px; background-color: #FFF7E5; background-color: #E9F0FF; color: #5D8EFF; font-size: 20px; border-radius: 50px; font-weight: 700;}
+.productDetailBox .infoBox_02 .infoBox strong{display: block; margin-bottom: 5px; font-size: 32px;}
+.productDetailBox .infoBox_02 .infoBox p{margin-bottom: 20px; font-size: 22px; font-weight: 600;}
+.productDetailBox .infoBox_02 h3{margin-bottom: 40px; text-align: left; font-size: 50px; font-weight: 700; color: 222; line-height: 1.3;}
+.productDetailBox .infoBox_02 h3 strong{color: #FF5402;}
+.productDetailBox .infoBox_02 .infoList_0202{margin-top: 30px;}
+.productDetailBox .infoBox_02 .infoList_0202 li{flex-direction: column; align-items: flex-start; padding: 20px 32px; margin-bottom: 20px; display: flex; background: linear-gradient(to right, #EAF1FF 0%, #F8F8F9 100%); border-radius: 10px;}
+.productDetailBox .infoBox_02 .infoList_0202 li p{text-align: left;}
+.productDetailBox .infoBox_02 .infoList_0202 li span{margin-bottom: 10px; font-size: 20px; font-weight: 700; color: #5D8EFF; }
+.productDetailBox .infoBox_02 .infoList_0202 li strong{margin: 0; font-size: 22px; font-weight: 700;  line-height: 1.2; color: #333D4B;}
+.productDetailBox .infoBox_02 .infoListType01 li{display: flex!important; align-items: flex-start!important; flex-direction: row; gap: 0 20px}
+.productDetailBox .infoBox_02 .infoList_0203 li{color: #767676; font-weight: 500;}
+.productDetailBox .infoBox_05{padding: 80px; border-radius: 32px; background: url(../images/sub/bg01.jpg)no-repeat center top; background-size: cover; background-attachment: fixed;}
+.productDetailBox .infoBox_05 .box{margin-bottom: 80px;}
+.productDetailBox .infoBox_05 .box:last-child{margin-bottom: 0;}
+.productDetailBox .infoBox_05 .title_0502{margin-bottom: 50px; font-size: 40px; font-weight: 700; color: #fff;}
+.productDetailBox .infoBox_05 .text_0503{margin-bottom: 32px; color: #fff; font-size: 20px; font-weight: 600;}
+.productDetailBox .infoBox_05 .infoList_0504 li{padding: 32px; min-height: 136px; display: flex; flex-direction: column; justify-content: center; margin-bottom: 20px; border-radius: 16px; background-color: #fff;}
+.productDetailBox .infoBox_05 .infoList_0504 li strong{margin-bottom: 10px; font-size: 24px; font-weight: 700; color: #5D8EFF;}
+.productDetailBox .infoBox_05 .infoList_0504 li p{font-size: 20px; color: #222; font-weight: 500; word-break: keep-all;}
+.productDetailBox .infoBox_05 .imgBox_05_04{margin-bottom: 50px;}
+.productDetailBox .infoBox_05 .imgBox_05_04 img{display: block; width: 100%; margin-bottom: 16px;}
+.productDetailBox .infoBox_05 .imgBox_05_04 span{display: block; text-align: right; color: #fff; font-size: 14px; font-weight: 600;}
+.productDetailBox .btnBox{position: sticky; margin: 30px auto 0; left:0; right:0; bottom: 20px;  display: flex; justify-content: center; gap: 0 10px;}
+.productDetailBox .btnBox button{max-width: none; }
+.detail_btn{display: block; height: 50px; width: 100%; background-color: #5D8EFF; color: #fff; font-size: 18px; font-weight: 500; border-radius: 10px; z-index: 99999;}
+.detail_btn01{background-color: #fff; color: #000; border: 1px solid #5D8EFF;}
+.productModalWrap .detail_btn{margin: 30px auto 0;}
+
+@media (max-width: 1199px){
+
+  .productDetailBox{max-width: none; padding: 0;}
+  .productDetailBox .titleBox_01 {margin-bottom: 35px; padding: 70px 20px 65px;}
+  .productDetailBox .infoBox_02{text-align: center;}
+  .productDetailBox .titleBox_02 span,
+  .productDetailBox .titleBox_02 h3{text-align: center!important;}
+  .productDetailBox .infoBox_02 .infoList_0202 li{padding: 20px; align-items: center;}
+  .productDetailBox .titleBox_01 .title_0102 h3{font-size: 50px!important;}
+  .productDetailBox .titleBox_01{padding: 50px 20px; border-radius: 20px;}
+  .productDetailBox .infoBox_02 .infoBox strong{font-size: 26px;}
+  .productDetailBox .infoBox_02 .infoList_0202 li span,
+  .productDetailBox .infoBox_02 .sectionText,
+  .productDetailBox .titleBox_01 .title_0102 span,
+  .productDetailBox .infoBox_02 .infoBox p{font-size: 18px!important;}
+  .productDetailBox .infoBox_02 .infoBox p.textType01{display: inline-block; text-align: left!important;}
+  .productDetailBox .infoBox_02 .infoList_0202 li strong{font-size: 16px;}
+  .productDetailBox .infoBox_05 .title_0502{margin-bottom: 20px; font-size: 30px;}
+  .productDetailBox .infoBox_05 .text_0503{font-size: 18px;}
+  .productDetailBox .infoBox_05 .infoList_0504 li strong{font-size: 20px;}
+  .productDetailBox .infoBox_05 .infoList_0504 li p{font-size: 18px;}
+  .productDetailBox .infoBox_05{padding: 60px 30px;}
+  .productDetailBox .infoBox_02 .infoListType01 li{gap: 0 10px;}
+  .productDetailBox .infoBox_02 .infoListType01 li p{margin-bottom: 0;}
+  .productDetailBox .infoBox_02 .infoList_0202{margin-top: 20px;}
+
+  .productDetailBox .infoBox_03 .infoList{background-position: center;}
+  .productDetailBox .infoBox_03 .infoList li span{font-size: 18px;}
+  .productDetailBox .infoBox_03 .infoList li strong{font-size: 26px;}
+
+}
+
+@media (max-width: 767px){
+
+  .productDetailBox .infoBox_02{margin-bottom: 45px;}
+  .productDetailBox .infoBox_02 .sectionText{margin-bottom: 10px;}
+  .productDetailBox .titleBox_01 .title_0102 span{font-size: 18px;}
+  .productDetailBox .titleBox_01 .title_0102 h3{font-size: 24px!important;}
+  .productDetailBox .titleBox_01{padding: 50px 20px 45px; border-radius: 15px;}
+  .productDetailBox .infoBox_02 .infoBox strong{font-size: 22px;}
+  .productDetailBox .infoBox_02 .infoList_0202 li span,
+  .productDetailBox .infoBox_02 .sectionText,
+  .productDetailBox .titleBox_01 .title_0102 span,
+  .productDetailBox .infoBox_02 .infoBox p{font-size: 16px!important;}
+  .productDetailBox .infoBox_05 .title_0502{margin-bottom: 10px; font-size: 24px;}
+  .productDetailBox .infoBox_05 .infoList_0504 li{padding: 20px; min-height: auto;}
+  .productDetailBox .infoBox_05 .text_0503{font-size: 16px;}
+  .productDetailBox .infoBox_05 .infoList_0504 li strong{font-size: 18px;}
+  .productDetailBox .infoBox_05 .infoList_0504 li p{font-size: 16px;}
+  .productDetailBox .infoBox_05{padding: 50px 30px;}
+
+  .detail_btn{font-size: 16px;}
+
+  .productDetailBox .infoBox_03 .infoList li span{font-size: 16px;}
+  .productDetailBox .infoBox_03 .infoList li strong{font-size: 22px;}
+  .productDetailBox .infoBox_03 .infoList li::after{height: 15px; margin-top: -7.5px;}
+
+}
+
+@media (max-width: 480px){
+
+  .productDetailBox .infoBox_05 .box{margin-bottom: 50px;}
+  .productDetailBox .titleBox_01 .title_0102 span{font-size: 16px;}
+  .productDetailBox .titleBox_01 .title_0102 h3{font-size: 20px!important;}
+  .productDetailBox .titleBox_01{padding:40px 20px 35px; border-radius: 10px;}
+  .productDetailBox .infoBox_02 .infoBox strong{font-size: 18px;}
+  .productDetailBox .infoBox_02 .infoList_0202 li span,
+  .productDetailBox .infoBox_02 .sectionText,
+  .productDetailBox .titleBox_01 .title_0102 span,
+  .productDetailBox .infoBox_02 .infoBox p{font-size: 14px!important;}
+  .productDetailBox .infoBox_05 .title_0502{margin-bottom: 0; font-size: 20px;}
+  .productDetailBox .infoBox_05 .text_0503{font-size: 14px;}
+  .productDetailBox .infoBox_05 .infoList_0504 li strong{font-size: 16px;}
+  .productDetailBox .infoBox_05 .infoList_0504 li p{font-size: 14px;}
+  .productDetailBox .infoBox_05{padding: 50px 30px;}
+  .productDetailBox .infoBox_02 .infoList_0202 li strong{font-size: 14px;}
+  .productDetailBox .infoBox_02 .infoList_0202 li strong br{display: none;}
+
+  .detail_btn{font-size: 14px;}
+
+  .productDetailBox .infoBox_03{border-radius: 10px;}
+  .productDetailBox .infoBox_03 .infoList{position: relative; flex-direction: column; gap: 70px 0; z-index: 1;}
+  .productDetailBox .infoBox_03 .infoList::before{content: ""; position: absolute; top:0; left:0; right:0; bottom: 0; z-index: 999; background-color: rgba(0,0,0,.3); z-index: -1;}
+  .productDetailBox .infoBox_03 .infoList li span{margin-bottom: 5px; font-size: 14px;}
+  .productDetailBox .infoBox_03 .infoList li strong{font-size: 18px;}
+  .productDetailBox .infoBox_03 .infoList li::after{top: auto; bottom: -35px; top: auto;
+   left: 50%; margin-left: -6.5px;  width: 13px; height: 1px; margin-top:0}
+
+
+}
+
+/* 회사소개 */
+.introduceBox .top{padding: 0 20px; position: relative; height: 100vh; display: flex; align-items: center; justify-content: center; overflow: hidden;}
+.introduceBox .top::after{content: ''; position: absolute; top:0; left:0; right:0; bottom: 0; background: url(../images/sub/introduce_img01.jpg)no-repeat center; background-size: cover; z-index: -1; transform: scale(1.6); transition: all 7s;}
+.introduceBox .top h3{margin-top: -90px; color: #fff; text-align: center; font-size: 45px; word-break: keep-all;} 
+.introduceBox .top h3 span{margin-bottom: 10px; display: block; font-size: 20px; font-weight: 700;}
+.introduceBox .top h3 strong{color: #5D8EFF;}
+.introduceBox .top h3 strong em{position: relative;}
+.introduceBox .top h3 strong em::before{content: ''; width: 10px; height: 10px; position: absolute; top:-19px; left:50%; transform: translateX(-50%); border-radius: 50%; background-color: #5D8EFF;}
+.introduceBox .top.active::after{transform: scale(1);}
+.introduceBox .infoBox{padding: 0 0 140px;}
+.introduceBox .infoBox .titleBox{margin-bottom: 110px;}
+.introduceBox .infoBox .infoList{display: flex; gap: 0 23px;}
+.introduceBox .infoBox .infoList li{flex: 1; position: relative; padding: 76px 30px 25px; border: 1px solid #EAEAEA; border-radius: 20px;}
+.introduceBox .infoBox .infoList li .number{position: absolute; top:30px; right:30px; width: 30px; height: 30px; line-height: 30px; border-radius: 50%; text-align: center; background-color: #5D8EFF; font-size: 20px; font-weight: 700; color: #fff;}
+.introduceBox .infoBox .infoList li .title{margin-bottom: 22px; font-size: 24px; font-weight: 700; color: #000;}
+.introduceBox .infoBox .infoList li .text{font-size: 18px; font-weight: 600; color: #949393;}
+.introduceBox .coreValueBox{padding: 160px 0; background-color: #FCFCFC;}
+.introduceBox .coreValueBox .titleBox{margin-bottom: 80px;}
+.introduceBox .coreValueList{max-width: 1000px; margin: 0 auto; display: flex; gap: 0 40px;}
+.introduceBox .coreValueList li{flex: 1; display: flex; align-items: center; flex-direction: column; }
+.introduceBox .coreValueList li h3{margin:0 auto 40px; max-width: 220px; width: 100%; height: 80px; line-height: 80px; border-radius: 16px; color: #5D8EFF; font-size: 26px; font-weight: 700; text-align: center; background-color: #E9F0FF;}
+.introduceBox .coreValueList li::before{content: ''; width: 100px; height: 100px; margin-bottom: 48px;}
+.introduceBox .coreValueList li:nth-child(1)::before{background: url(../images/sub/corevalue_icon01.svg)no-repeat center;}
+.introduceBox .coreValueList li:nth-child(2)::before{background: url(../images/sub/corevalue_icon02.svg)no-repeat center;}
+.introduceBox .coreValueList li:nth-child(3)::before{background: url(../images/sub/corevalue_icon03.svg)no-repeat center;}
+.introduceBox .coreValueList li:nth-child(4)::before{background: url(../images/sub/corevalue_icon04.svg)no-repeat center;}
+.introduceBox .coreValueList li p{text-align: center; font-size: 18px; font-weight: 600; color: #949393; word-break: keep-all;}
+.introduceBox .infoBox02{padding: 120px 0;}
+.introduceBox .infoBox02 .titleBox{ margin-bottom: 110px;}
+.introduceBox .infoBox02 .infoText{display: flex; gap: 0 32px;}
+.introduceBox .infoBox02 .infoText li{padding: 35px 20px 20px 48px; position: relative; flex: 1; height: 374px; border-radius: 20px; background-color: #5D8EFF; z-index: 1;}
+.introduceBox .infoBox02 .infoText li::after{content: ''; position: absolute; background-size: contain!important; z-index: -1;}
+.introduceBox .infoBox02 .infoText li:nth-child(1):after{width: 349px; height: 250px; bottom: 0; left: 50%; transform: translateX(-50%); background: url(../images/sub/info_icon01.svg)no-repeat center;}
+.introduceBox .infoBox02 .infoText li:nth-child(2):after{bottom: 11px; width: 282px; height: 212px; right:26px; background: url(../images/sub/info_icon02.svg)no-repeat center;}
+.introduceBox .infoBox02 .infoText li strong{display: block; margin-bottom: 12px; font-size: 30px; color: #fff;}
+.introduceBox .infoBox02 .infoText li p{font-size: 22px; font-weight: 700; color: #fff;}
+.introduceBox .infoBox03{margin: 0 0 112px;}
+.introduceBox .infoBox03 .list{margin-top: 80px; }
+.introduceBox .infoBox03 .list li{ margin-bottom: 13px; padding: 35px 30px;  display: flex; justify-content: center; align-items: center; position: relative; border-radius: 25px; background-color: #f9f9f9; text-align: center; word-break: keep-all; font-size: 24px; color: #333D4B; font-weight: 700;}
+.introduceBox .infoBox03 .list li span{position: absolute; top:50%; transform: translateY(-50%); left: 30px;  color: #5D8EFF; font-weight: 700; font-size: 30px;}
+.introduceBox .infoBox03 .list li:last-child{margin-bottom: 0;}
+.introduceBox .introduceTextBox{position: relative; padding: 130px 0; z-index: 1;}
+.introduceBox .introduceTextBox::after{content: ''; position: absolute; top:0; left:0; right:0; bottom: 0; background: url(../images/sub/bg02.jpg)no-repeat center; background-size: cover; z-index: -1;}
+.introduceBox .introduceTextBox .titleBox{margin-bottom: 80px;}
+.introduceBox .introduceTextBox .titleBox .title{text-align: left; color: #fff;}
+.introduceBox .introduceTextBox .text{font-size: 20px; color: #fff; line-height: 2;}
+.introduceBox .infoBox04{padding: 110px 0 138px; background-color: #F5F8FF;}
+.introduceBox .infoBox04 .titleBox{margin-bottom: 0;}
+.introduceBox .infoBox04 .titleBox strong{color: #333D4B;}
+.introduceBox .infoBox04 .titleBox span{color: #333D4B; -webkit-text-fill-color: #333D4B;}
+.introduceBox .infoBox04 .text{padding: 70px 50px; color: #A8A8A8; font-size: 24px; background-color: #fff; border-radius: 25px; line-height: 2;}
+.introduceBox .infoBox04 .title{margin-bottom: 80px; font-size: 40px;}
+
+@media (max-width: 1199px){
+
+  .introduceBox .infoBox03{margin-bottom: 100px;}
+  .introduceBox .infoBox .infoList{flex-wrap: wrap; gap: 20px 2%;}
+  .introduceBox .infoBox .infoList li{width: 49%; flex: none;}
+
+  .introduceBox .infoBox04{padding: 90px 0 110px;}
+  .introduceBox .infoBox04 .title{font-size: 32px;}
+  .introduceBox .infoBox04 .text{padding: 50px 30px; font-size: 22px;}
+  
+  .introduceBox .infoBox03 .list li{padding: 30px; font-size: 20px; border-radius: 15px;}
+  .introduceBox .infoBox03 .list li span{font-size: 25px;}
+
+}
+
+@media (max-width: 1024px){
+
+  .introduceBox .infoBox{padding: 0 0 100px;}
+  .introduceBox .coreValueBox{padding: 80px 0;}
+  .introduceBox .coreValueList li h3{margin: 0 auto 20px; height: 50px; line-height: 50px; font-size: 20px; border-radius: 5px;}
+  .introduceBox .coreValueList li p{font-size: 16px;}
+
+  .introduceBox .infoBox .infoList li{padding: 60px 30px 20px;}
+  .introduceBox .infoBox .infoList li .title{margin-bottom: 20px; font-size: 20px;}
+  .introduceBox .infoBox .infoList li .text{font-size: 16px;}
+  .introduceBox .infoBox .infoList li .number{top:20px; width: 25px; height: 25px; line-height: 25px; font-size: 18px;}
+
+  .introduceBox .top h3 span{font-size: 18px;}
+  .introduceBox .top h3{font-size: 36px;}
+  .introduceBox .top h3 strong em::before{width: 8px; height: 8px; top: -10px;}
+
+  .introduceBox .infoBox02{padding: 80px 0;}
+  .introduceBox .infoBox02 .titleBox{margin-bottom: 80px;}
+  .introduceBox .infoBox02 .infoText{flex-direction: column; gap: 30px 0;}
+  .introduceBox .infoBox02 .infoText li{padding: 35px 20px 150px 30px; width: 100%; height: auto;}
+  .introduceBox .infoBox02 .infoText li strong{font-size: 26px;}
+  .introduceBox .infoBox02 .infoText li p{font-size: 20px;}
+
+  .introduceBox .introduceTextBox .titleBox{margin-bottom: 60px;}
+  .introduceBox .introduceTextBox{padding: 90px 0;}
+  .introduceBox .introduceTextBox .text{font-size: 18px;}
+
+}
+
+@media (max-width: 767px){
+
+  .introduceBox .infoBox .titleBox{margin-bottom: 83px;}
+  .introduceBox .infoBox .infoList li{padding: 50px 20px 30px;}
+  .introduceBox .infoBox .infoList li .title{margin-bottom: 15px; font-size: 18px;}
+  .introduceBox .infoBox .infoList li .number{font-size: 16px;}
+
+  .introduceBox .top h3 span{font-size: 16px;}
+  .introduceBox .top h3{font-size: 32px;}
+
+  .introduceBox .coreValueList{gap: 100px 0; flex-wrap: wrap;}
+  .introduceBox .coreValueList li{flex: none; width: 50%;}
+  .introduceBox .coreValueList li::before{margin-bottom: 25px;}
+  .introduceBox .coreValueList li h3{font-size: 18px;}
+  
+  .introduceBox .infoBox02 .infoText li strong{font-size: 24px;}
+  .introduceBox .infoBox02 .infoText li p{font-size: 18px;}
+
+  .introduceBox .introduceTextBox .titleBox{margin-bottom: 40px;}
+
+  .introduceBox .introduceTextBox .text{font-size: 16px;}
+  .introduceBox .introduceTextBox .text br{display: none;}
+  .introduceBox .introduceTextBox .text span{display: block; margin-top: 20px;}
+
+  .introduceBox .infoBox03{margin-bottom: 80px;}
+  .introduceBox .infoBox03 .list li{margin-bottom: 30px; flex-direction: column; padding: 40px 20px 30px; font-size: 18px; border-radius: 10px; box-shadow: 0 5px 10px rgba(0, 0, 0, .1);}
+  .introduceBox .infoBox03 .list li span{position: static; width: 35px; height: 35px; line-height: 35px;  font-size: 18px; border-radius: 50%; background-color: #5D8EFF; color: #fff;}
+  .introduceBox .infoBox03 .titleBox{margin-bottom: 0;}
+
+  .introduceBox .infoBox04{padding: 70px 0 90px;}
+  .introduceBox .infoBox04 .title{margin-bottom: 50px; font-size: 26px;}
+  .introduceBox .infoBox04 .text{font-size: 18px; border-radius: 15px;}
+  .introduceBox .infoBox04 .text br{display: none;}
+
+}
+
+@media (max-width: 576px){
+
+  .introduceBox .infoBox .infoList{gap: 20px 0;}
+  .introduceBox .infoBox .infoList li{width: 100%;}
+  .introduceBox .infoBox .infoList li .text br{display: none;}
+
+  .introduceBox .coreValueList li{width: 100%;}
+  .introduceBox .coreValueList li h3{max-width: none;}
+
+  .introduceBox .infoBox02 .infoText li:nth-child(1):after{width: 240px; height: 172px;}
+  .introduceBox .infoBox02 .infoText li:nth-child(2):after{width: 175px; height: 130px; right: 0; bottom: 0;}
+
+  .introduceBox .introduceTextBox .titleBox{margin-bottom: 30px;}
+
+}
+
+@media (max-width: 480px){
+
+  .introduceBox .infoBox{padding: 0 0 80px;}
+  .introduceBox .infoBox03 .list{margin-top: 65px;}
+  .introduceBox .infoBox03{margin-bottom: 50px;}
+  .introduceBox .infoBox .titleBox{margin-bottom: 60px;}
+  .introduceBox .infoBox03 .list li span{width: 30px; height: 30px; line-height: 30px; font-size: 14px;}
+  .introduceBox .infoBox03 .list li{font-size: 14px; border-radius: 5px;}
+
+  .introduceBox .infoBox04{padding: 50px 0;}
+  .introduceBox .infoBox04 .title{margin-bottom: 35px; font-size: 18px;}
+  .introduceBox .infoBox04 .text{padding: 35px 20px; font-size: 14px; border-radius: 10px;}
+  .introduceBox .infoBox04 .text br{display: none;}
+  .introduceBox .introduceTextBox{padding: 60px 0;}
+  .introduceBox .introduceTextBox .titleBox{margin-bottom: 40px;}
+  .introduceBox .introduceTextBox .text{line-height: 1.5;}
+  .introduceBox .introduceTextBox .text span{margin-top: 40px;}
+
+}
+
+@media (max-width: 414px){
+
+  .introduceBox .coreValueList li h3{font-size: 16px;}
+  .introduceBox .coreValueList li p{font-size: 14px;}
+
+  .introduceBox .infoBox02 .infoText li{padding: 30px 20px 150px;}
+  .introduceBox .infoBox02 .infoText li strong{font-size: 16px;}
+  .introduceBox .infoBox02 .infoText li p{font-size: 14px;}
+  .introduceBox .infoBox02 .infoText li p br{display: none;}
+
+  .introduceBox .introduceTextBox .titleBox{margin-bottom: 20px;}
+  .introduceBox .infoBox .titleBox{margin-bottom: 50px;}
+
+}
+
+@media (max-width: 360px){
+
+  .introduceBox .top h3{font-size: 26px;}
+  .introduceBox .top h3 strong em::before{width: 5px; height: 5px;}
+
+  .introduceBox .coreValueBox .titleBox{margin-bottom: 60px;}
+
+}
+
+@media (max-width: 320px){
+
+  .introduceBox .infoBox02{padding: 60px 0;}
+  .introduceBox .infoBox .infoList li .title{margin-bottom: 10px; font-size: 16px;}
+  .introduceBox .infoBox .infoList li .text{font-size: 14px;}
+  .introduceBox .infoBox .infoList li .number{top: 15px; right: 20px; width: 20px; height: 20px; line-height: 20px; font-size: 14px;}
+
+  .introduceBox .infoBox02 .titleBox{margin-bottom: 54px;}
+
+}
+
+/* 기업소식 */
+.newsBox .slideBox{position: relative;}
+.newsBox .slick-list{margin: 0 -20px;}
+.newsBox .box {display: flex; align-items: flex-start; gap: 0 54px; margin: 0 20px;}
+.newsBox .box .imgBox{height: 450px; width: 100%; border-radius: 8px; overflow: hidden; background-color: #f7f7f7;}
+.newsBox .box .imgBox img{display: block; width: 100%; height: 100%; object-fit: contain;}
+.newsBox .box .textBox{width: 500px; flex-shrink: 0;}
+.newsBox .textBox h3{margin-bottom: 30px; font-size: 32px; color: #333D4B;}
+.newsBox .textBox p{font-size: 18px; font-weight: 600; color: #A6A6A6; line-height: 1.6;}
+.newsBox .slick-dots{position: absolute; left: 0; bottom: 33px; display: flex!important; gap: 0 9px; align-items: center; justify-content: center;}
+.newsBox .slick-dots li.slick-active button{background: #5D8EFF;}
+.newsBox .slick-dots li button{display: block; width: 9px; height: 9px; text-indent: -9999px; border-radius: 50px; background-color:#D9D9D9; cursor: pointer;}
+.newsBox .controlBox{position: absolute; left:414px; bottom: 19px;; display: flex; gap: 0 7px;}
+.newsBox .controlBox button{position: relative; width: 40px; height: 40px; border-radius: 50%; border: 1px solid hsl(220, 10%, 94%); background-color: #fff;}
+.newsBox .controlBox button::after{width: 8px; height: 15px; content: ''; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background-size: contain!important;}
+.newsBox .controlBox .prev::after{transform: translate(-50%, -50%) rotate(180deg); background: url(../images/main/arrow_icon03.svg)no-repeat center;}
+.newsBox .controlBox .next::after{ background: url(../images/main/arrow_icon03.svg)no-repeat center;}
+.newsBox .slick-track{ margin: initial!important;}
+
+@media (max-width: 1199px){
+
+  .newsBox{padding: 50px 0 0;}
+  .newsBox .box h3{margin-bottom: 20px; font-size: 26px;}
+  .newsBox .textBox p{font-size: 16px;}
+  .newsBox .box{flex-direction: column-reverse;}
+  .newsBox .slick-dots{margin-top: 50px; position: static;}
+  .newsBox .controlBox{position: absolute; bottom: auto; top:-60px; left:0;}
+  .newsBox .box .imgBox{margin-bottom: 30px;}
+  .newsBox .box .textBox{width: 100%;}
+
+}
+
+@media (max-width: 1024px){
+
+  .newsBox .slick-dots,
+  .newsBox .controlBox{bottom: 0;}
+
+}
+
+@media (max-width: 767px){
+
+  .newsBox .box h3{font-size: 22px;}
+  .newsBox .slide .imgBox{margin-bottom: 20px;}
+  
+}
+
+@media (max-width: 480px){
+
+  .newsBox .box .imgBox{height: 363px;}
+  .newsBox .box h3{margin-bottom: 10px; font-size: 18px;}
+  .newsBox .slick-dots{margin-top: 35px;}
+
+}
+
+/* 후기 */
+.topSelectBtn{margin-bottom: 20px; display: flex; gap: 0 20px;}
+.topSelectBtn .btn{display: block; width: 105px; height: 48px; text-align: center; border: 1px solid #F1F1F1; border-radius: 16px;} 
+.topSelectBtn .btn.active{background-color: #F4F4F4; color: #626262; font-weight: 700;}
+.reviewBox .reviewList{margin-bottom: 40px;}
+.reviewBox .reviewList li{margin-bottom: 40px; padding: 40px 25px; border-width: 1px 0; background-color: #F9FAFB; border-radius: 25px;}
+.reviewBox .reviewList li:last-child{border-bottom: 0;}
+.reviewBox .reviewList li .top{margin-bottom: 5px; display: flex; align-items: center; gap: 0 20px;}
+.reviewBox .reviewList li .top span{font-size: 20px; font-weight: 700; color: #565656;}
+.reviewBox .reviewList li .top .date{font-size: 20px; color: #565656;}
+.reviewBox .reviewList li h3{margin-bottom: 20px; font-size: 30px; color: #232323;}
+.reviewBox .reviewList li p{margin-bottom: 20px; font-size: 18px; color: #565656;}
+.reviewBox .reviewList li .btn{padding: 0 30px; display: flex; align-items: center; justify-content: center; gap: 0 10px; height: 46px; border-radius: 50px; border: 1px solid #F1F1F1; background-color: #fff;}
+.reviewBox .reviewList li .btn span,
+.reviewBox .reviewList li .btn em{color: #858585; font-size: 14px; font-weight : 700;}
+.reviewBox .reviewList li .btn span{display: flex; align-items: center; gap: 0 10px;}
+.reviewBox .reviewList li .btn span::before{margin-top: -2px; content: ''; width: 20px; height: 20px; background: url(../images/sub/like.svg)no-repeat center;}
+.reviewBox .reviewList li .btn.active span::before{margin-top: -2px; content: ''; width: 20px; height: 20px; background: url(../images/sub/like_active.svg)no-repeat center;}
+.reviewBox .view{margin-bottom: 80px;}
+.reviewBox .interestBox{margin-bottom: 40px; padding: 30px 20px 60px; border-radius: 20px; background-color: #FBFBFB;}
+.reviewBox .interestBox span{margin-bottom: 5px; gap: 15px 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; font-size: 32px; font-weight: 700; color: #000;}
+.reviewBox .interestBox span::before{content: ''; width: 100px; height: 85px; background: url(../images/sub/money_icon.svg)no-repeat center;}
+.reviewBox .interestBox .box{display: flex; align-items: center; justify-content: center; gap: 0 0;}
+.reviewBox .interestBox .box strong{font-size: 60px;}
+.reviewBox .interestBox .box em{font-size: 60px; font-weight: 600; color: #000;}
+.reviewBox .button{display: block; margin: 0 auto;}
+
+@media (max-width: 1024px){
+
+  .reviewBox .reviewList li .top span,
+  .reviewBox .reviewList li .top .date{font-size: 18px;}
+  .reviewBox .reviewList li h3{font-size: 26px;}
+  .reviewBox .reviewList li p{font-size: 16px;}
+
+  .reviewBox .interestBox span{font-size: 26px;}
+  .reviewBox .interestBox .box strong,
+  .reviewBox .interestBox .box em{font-size: 45px;}
+
+}
+
+@media (max-width: 767px){
+
+  .reviewBox .reviewList{margin-bottom: 20px;}
+  .reviewBox .reviewList li .top{gap: 0 10px;}
+  .reviewBox .reviewList li .top span,
+  .reviewBox .reviewList li .top .date{font-size: 16px;}
+  .reviewBox .reviewList li h3{font-size: 24px;}
+  .reviewBox .reviewList li p{font-size: 16px;}
+
+  .reviewBox .interestBox{margin-bottom: 35px;}
+  .reviewBox .interestBox{padding: 30px 20px 50px;}
+  .reviewBox .interestBox span{font-size: 24px;}
+  .reviewBox .interestBox .box strong,
+  .reviewBox .interestBox .box em{font-size: 40px;}
+  .reviewBox .view{margin-bottom: 40px;}
+
+}
+
+@media (max-width: 480px){
+
+  .reviewBox .reviewList li h3{font-size: 20px;}
+  .reviewBox .interestBox span{font-size: 18px;}
+  .reviewBox .interestBox .box strong,
+  .reviewBox .interestBox .box em{font-size: 26px;}
+  .topSelectBtn{flex-direction: column; gap : 10px 0;}
+  .topSelectBtn .btn{width: 100%; border-radius: 5px;}
+  .reviewBox .interestBox{padding: 30px 20px 40px;}
+
+}
+
+@media (max-width: 414px){
+
+  .reviewBox .reviewList li{padding: 35px 20px;}
+  .reviewBox .reviewList li .top span,
+  .reviewBox .reviewList li .top .date{font-size: 14px;}
+  .reviewBox .interestBox .box strong,
+  .reviewBox .interestBox .box em{font-size: 24px;}
+  .reviewBox .reviewList li h3{margin-bottom: 10px; font-size: 16px;}
+  .reviewBox .interestBox span{font-size: 16px;}
+  .reviewBox .interestBox .box strong,
+  .reviewBox .interestBox .box em{font-size: 22px;}
+  .reviewBox .interestBox{padding: 30px 20px;}
+
+}
+
+/* 문의하기 */
+.contactBox h3{margin-bottom: 30px; font-size: 35px; color: #000;}
+.comList{margin-bottom: 40px;}
+.comList li{margin-bottom: -1px;}
+.comList li a{position: relative; padding: 20px 30px 20px 0; display: block; border: 1px solid #EAEAEA; border-width: 1px 0; }
+.comList li a:hover h4{color: #5D8EFF;}
+.comList li a::after{width: 24px; height: 24px; content: ''; position: absolute; top: 50%; transform: translateY(-50%); right:0; background: url(../images/sub/arrow_icon03.svg)no-repeat center;}
+.contactBox .button{display: inline-flex; margin-bottom: 35px;}
+.comList li a h4{display: flex; align-items: center; flex-wrap: wrap; gap: 5px 20px; margin-bottom: 13px; font-size: 20px; color: #000; transition: all .3s;}
+.comList li a h4 em{display: inline-flex; justify-content: center; width: 54px; height: 31px; line-height: 31px; border-radius: 8px; background-color: #FFEBEB; color: #FF3D3D; font-weight: 500; font-size: 16px;}
+.comList li a .date{font-size: 18px; font-weight: 600; color: #A6A6A6;}
+.contactBox .textAreaBox textarea{padding: 20px; width: 100%; height: 379px; border: 1px solid #F8F8F8; font-size: 18px; font-weight: 500; color: #000; border-radius: 16px;}
+.contactBox .textAreaBox textarea::placeholder{color: #D0D0D0;}
+.contactBox .btnBox{display: flex; justify-content: center; gap: 0 20px;}
+.contactBox .btnBox .btn{width: 200px; height: 60px; border-radius: 16px;}
+.contactBox .btnBox .cancelBtn{background-color: #F4F4F4; color: #B3B3B3; font-size: 18px; font-weight: 700;}
+.contactBox .btnBox .regBtnBtn{background: linear-gradient(to right, #905DFF, #5E79FF); color: #fff; font-size: 18px; font-weight: 700;}
+
+@media (max-width: 1024px){
+
+  .contactBox .button{margin-bottom: 20px;}
+  .contactBox h3{font-size: 26px;}
+  .comList li a h4{margin-bottom: 6px; gap: 5px 15px; font-size: 18px;}
+  .comList li a .date{font-size: 16px;}
+  .comList li a h4 em{font-size: 14px; width: 45px; height: 28px; line-height: 28px;}
+
+}
+
+@media (max-width: 480px){
+
+  .contactBox .btnBox{gap: 0 10px;}
+  .contactBox .btnBox .btn{flex: 1; height: 50px; border-radius: 10px; font-size: 16px;}
+
+}
+
+@media (max-width: 414px){
+
+  .contactBox .button{margin-bottom: 0;}
+  .contactBox h3{margin-bottom: 15px; font-size: 16px;}
+  .comList li a h4{gap: 5px 15px; font-size: 16px;}
+  .comList li a .date{font-size: 14px;}
+  .comList li a h4 em{font-size: 13px;}
+
+}
+
+/* 입출금신청 */
+.issuedModalWrap{opacity: 0; display: flex; align-items: center; justify-content: center; position: fixed; top:0; left:0; right:0; bottom: 0; background: rgba(0,0,0,.5); z-index: 9999; visibility: hidden; transition: all .5s;}
+.issuedModalWrap.active{opacity: 1; visibility:visible;}
+.issuedModalBox{position: relative; padding: 35px 38px 110px; max-width: 855px; width: 90%; background-color: #fff; border-radius: 20px;}
+.issuedModalBox h1{margin-bottom: 90px; text-align: center; font-size: 36px; color: #000;}
+.issuedModalBox .modalCloseBtn{width: 20px; height: 20px; position: absolute; top:36px; right:36px; background: url(../images/sub/close_btn.svg)no-repeat center;}
+.applicationBox{padding: 190px 0 0;}
+.applicationBox h3{margin-bottom: 70px; padding: 0 20px; font-size: 45px; font-weight: 700; color: #000; text-align: center;}
+.applicationBox .tabBox{display: flex;}
+.applicationBox .tabBox .tab{flex: 1; height: 76px; text-align: center; color: #B3B3B3; font-size: 23px; font-weight: 600;}
+.applicationBox .tabBox .tab.active{color: #5D8EFF; border-bottom: 1px solid #5D8EFF;}
+.applicationBox .applicationContentBox{background-color: #E9F0FF;}
+.applicationBox .contentBox .infoList{margin-bottom: 49px; display: flex; gap: 0 23px;}
+.applicationBox .contentBox .infoList li{flex: 1; position: relative; padding: 70px 30px 30px 30px; border: 1px solid #EAEAEA; border-radius: 20px; background-color: #fff;}
+.applicationBox .contentBox{padding: 50px 0 80px;}
+.applicationBox .contentBox .infoList li .title{margin-bottom: 30px; font-size: 24px; font-weight: 700; color: #000;}
+.applicationBox .contentBox .infoList li .text01{margin-bottom: 30px; font-size: 18px; font-weight: 600; color: #949393;}
+.applicationBox .contentBox .infoList li .text01 .inquiryBtn{color: #5D8EFF; text-decoration: underline;}
+.applicationBox .contentBox .infoList li .text02{color: #FF8484; font-weight: 600;}
+.applicationBox .contentBox .infoList li .number{position: absolute; top:30px; right:30px; width: 30px; height: 30px; border-radius: 50%; text-align: center; color: #fff; font-weight: 700; font-size: 20px; background-color: #5D8EFF;}
+.applicationBox .contentBox .infoBox{margin-bottom: 49px; padding: 38px; border-radius: 20px; border: 1px solid #DDDDDD; background-color: #fff;}
+.applicationBox .contentBox .infoBox h4{margin-bottom: 40px; color: #000; font-size: 36px; font-weight: 700;}
+.applicationBtnBox{display: flex; flex-wrap: wrap;  gap: 7px 30px;}
+.applicationBtnBox .btn{padding: 0 15px; height: 37px; border-radius: 50px; font-size: 16px; font-weight: 600; color: #626262; background-color: #F4F4F4;}
+.applicationBtnBox .reset{display: flex; align-items: center; gap: 0 10px; background-color: #FFEBEB; color: #FF3D3D;}
+.applicationBtnBox .reset::before{content: ''; width: 18px; height: 19px; background: url(../images/sub/reset_icon.svg)no-repeat center;}
+.issuedModalWrap .infoBox .inputTextBox,
+.applicationBox .contentBox .infoBox .inputTextBox{width: 100%;}
+.issuedModalWrap .infoBox .inputTextWrap,
+.applicationBox .contentBox .infoBox .inputTextWrap{display: flex; gap: 0 20px; margin-bottom: 20px;}
+.issuedModalWrap .infoBox .inputTextWrap .btn,
+.applicationBox .contentBox .infoBox .inputTextWrap .btn{width: 179px; text-align: center; border-radius: 16px; background-color: #5D8EFF; color: #fff; font-size: 18px; font-weight: 700;}
+.applicationBox .contentBox .infoBox .historyBtnBox{margin-bottom: 40px; display: flex; gap: 0 20px;}
+.applicationBox .contentBox .infoBox .historyBtnBox .btn{display: block; width: 104px; height: 48px; text-align: center; border: 1px solid #F1F1F1; border-radius: 16px; background-color: #fff; font-size: 14px; color: #D3D3D3; font-weight: 700;}
+.applicationBox .contentBox .infoBox .historyBtnBox .btn.active{background-color: #F4F4F4; color: #626262;}
+.applicationBox .contentBox .infoBox .historyList li{flex-wrap: wrap; margin-bottom: 47px; display: flex; justify-content: space-between; align-items: center; gap: 7px 20px;}
+.applicationBox .contentBox .infoBox .historyList li .leftBox{display: flex; align-items: center; gap: 0 40px;}
+.applicationBox .contentBox .infoBox .historyList li .date{font-weight: 700; font-size: 30px; color: #DFDFDF;}
+.applicationBox .contentBox .infoBox .historyList li .box{display: flex; flex-direction: column; gap: 0;}
+.applicationBox .contentBox .infoBox .historyList li .box em{font-size: 25px; font-weight: 700; color: #232323;}
+.applicationBox .contentBox .infoBox .historyList li .box .time{font-size: 18px; color: #565656;}
+.applicationBox .contentBox .infoBox .historyList li .price{ font-size: 25px; font-weight: 700; color: #000;}
+.applicationBox .contentBox .infoBox .historyList li .price.deposit{color: #FF3D3D;}
+.applicationBox .contentBox .moneyBox{margin-bottom: 49px; padding: 23px 20px 40px; background-color: #fff; border-radius: 20px; border: 1px solid #EAEAEA;}
+.applicationBox .contentBox .moneyBox span{gap: 10px 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; font-size: 25px; font-weight: 700; color: #000;}
+.applicationBox .contentBox .moneyBox span::before{width: 100px; height: 85px; content: ''; background: url(../images/sub/money_icon.svg)no-repeat center;}
+.applicationBox .contentBox .moneyBox .moneyNumber{margin-bottom: 5px; justify-content: center; display: flex; align-items: center; gap: 0 0; font-size: 40px; font-weight: 600; text-align: center;} 
+.applicationBox .contentBox .moneyBox .moneyNumber strong{color: #5D8EFF;}
+.applicationBox .contentBox .moneyBox .moneyNumber em{font-weight: 600; font-size: 40px; color:#000;}
+.applicationBox .contentBox .moneyBox p{text-align: center; font-weight: 600; color: #949393;}
+
+@media (max-width: 1199px){
+
+  .applicationBox{padding: 100px 0 0;}
+  
+}
+
+@media (max-width: 1024px){
+
+  .applicationBox h3{font-size: 36px;}
+  .applicationBox .tabBox .tab{font-size: 18px;}
+  .applicationBox .contentBox .infoList{flex-direction: column; gap: 10px 0;}
+  .applicationBox .contentBox .infoList li{padding: 28px 30px 20px 30px; flex: none; width: 100%; border-radius: 10px;}
+  .applicationBox .contentBox .infoList li .title{margin-bottom: 10px; font-size: 20px;}
+  .applicationBox .contentBox .infoList li .text01{margin-bottom: 10px;}
+  .applicationBox .contentBox .infoList li .text02,
+  .applicationBox .contentBox .infoList li .text01{font-size: 16px;}
+  .applicationBox .contentBox .infoList li br{display: none;}
+  .applicationBox .contentBox .infoList li .number{margin-bottom: 15px; display: block; position: static; width: 25px; height: 25px; line-height: 25px; font-size: 16px;}
+  .applicationBox .contentBox .infoBox h4{margin-bottom: 25px; font-size: 26px;}
+  .applicationBox .contentBox .infoBox{padding: 28px 20px 20px;}
+  .applicationBox .contentBox .infoBox .applicationBtnBox{gap: 7px 15px}
+  .applicationBox .contentBox .infoBox .inputTextWrap .btn{border-radius: 10px;}
+
+  .applicationBox .contentBox .infoBox .historyList li .date{font-size: 22px;}
+  .applicationBox .contentBox .infoBox .historyList li .box .time{font-size: 16px;}
+  .applicationBox .contentBox .infoBox .historyList li .price{font-size: 20px;}
+  .applicationBox .contentBox .infoBox .historyList li .box em{font-size: 20px;}
+  .applicationBox .contentBox .infoBox .historyList li .leftBox{gap: 0 24px;}
+
+  .applicationBox .contentBox .moneyBox .moneyNumber em,
+  .applicationBox .contentBox .moneyBox .moneyNumber{font-size: 26px;}
+  .applicationBox .contentBox .moneyBox span{font-size: 22px;}
+
+  .issuedModalBox{padding: 35px 20px 60px;}
+  .issuedModalBox{border-radius: 10px;}
+  .issuedModalBox h1{margin-bottom: 48px; font-size: 28px;}
+  .issuedModalBox .modalCloseBtn{top: 20px; right:20px;}
+  
+}
+
+@media (max-width: 767px){
+
+  .applicationBox{padding: 85px 0 0;}
+  .applicationBox h3{font-size: 30px;}
+  .applicationBox .tabBox .tab{height: 50px; font-size: 16px;}
+  .applicationBox .contentBox .infoList{margin-bottom: 30px;}
+  .applicationBox .contentBox .infoBox h4{font-size: 22px;}
+  .applicationBox .contentBox .infoList li .title{font-size: 18px;}
+  .applicationBox .contentBox .infoBox .inputTextWrap{gap: 0 10px;}
+  .applicationBox .contentBox .infoBox .inputTextWrap .btn{font-size: 16px;}
+
+  .applicationBox .contentBox .moneyBox span{font-size: 20px;}
+  .applicationBox .contentBox .moneyBox{margin-bottom: 20px;}
+  .applicationBox .contentBox .moneyBox .moneyNumber em,
+  .applicationBox .contentBox .moneyBox .moneyNumber{font-size: 22px;}
+  .applicationBox .contentBox .moneyBox{border-radius: 10px;}
+
+  .issuedModalBox{padding: 35px 20px 60px;}
+  .issuedModalBox h1{margin-bottom: 40px; font-size: 22px;}
+  .issuedModalWrap .infoBox .inputTextWrap{flex-direction: column; gap: 10px 0;}
+  .issuedModalWrap .infoBox .inputTextWrap .btn{width: 100%; height: 40px; border-radius: 8px; font-size: 16px;}
+  .applicationBtnBox{gap: 7px 10px;}
+
+}
+
+@media (max-width: 480px){
+
+  .applicationBox .contentBox .infoBox h4{font-size: 20px;}
+  .applicationBox h3{font-size: 26px;}
+  .applicationBox .contentBox .infoBox .historyBtnBox{flex-direction: column; gap: 10px;}
+  .applicationBox .contentBox .infoBox .historyBtnBox .btn{width: 100%; border-radius: 7px;}
+  .applicationBox .contentBox .infoBox .historyList li .price,
+  .applicationBox .contentBox .infoBox .historyList li .date,
+  .applicationBox .contentBox .infoBox .historyList li .box em{font-size: 18px;}
+  .applicationBox .contentBox .infoBox .historyList li .leftBox{gap: 0 15px;}
+
+  .applicationBox .contentBox .moneyBox span{font-size: 18px;}
+  .applicationBox .contentBox .moneyBox .moneyNumber em,
+  .applicationBox .contentBox .moneyBox .moneyNumber{font-size: 18px;}
+  .applicationBox .contentBox .infoBox .inputTextWrap{flex-direction: column; gap: 5px 0;}
+  .applicationBox .contentBox .infoBox .inputTextWrap .btn{height: 45px; width: 100%;}
+
+}
+
+@media (max-width: 414px){
+
+  .applicationBox h3{font-size: 22px;}
+  .applicationBox .contentBox .infoList li .number{width: 20px; height: 20px; line-height: 20px; font-size: 14px;}
+  .applicationBox .contentBox .infoList li .title{font-size: 16px;}
+  .applicationBox .contentBox .infoList li .text02,
+  .applicationBox .contentBox .infoList li .text01{font-size: 15px;}
+  .applicationBox .contentBox .infoList li{padding: 20px 30px 30px 20px;}
+  .applicationBox .contentBox .infoBox h4{font-size: 18px;}
+  .applicationBox .contentBox .infoBox .applicationBtnBox .btn{font-size: 14px;}
+  .applicationBox .contentBox .infoBox .historyList li .box .time,
+  .applicationBox .contentBox .infoBox .historyList li .price,
+  .applicationBox .contentBox .infoBox .historyList li .date,
+  .applicationBox .contentBox .infoBox .historyList li .box em{font-size: 14px;}
+  
+  .applicationBox .contentBox .moneyBox .moneyNumber em,
+  .applicationBox .contentBox .moneyBox .moneyNumber{font-size: 16px;}
+
+}
+
+@media (max-width: 360px){
+
+  .applicationBox .contentBox .infoBox .historyList li .box{text-align: center;}
+  .applicationBox .contentBox .infoBox .historyList li{margin-bottom: 20px; padding: 20px 0; flex-direction: column; align-items: center; border: 1px solid #F4F4F4; border-width: 1px 0;}
+  .applicationBox .contentBox .infoBox .historyList li .leftBox{flex-direction: column; gap: 5px 0;}
+
+}
+
+/* 자주묻는 질문 */
+.questionBox .title{margin-bottom: 60px; text-align: center; font-size: 45px; font-weight: 700;}
+.questionBox .inputSearchBox{position: relative; max-width: 600px; margin: 0 auto 20px; }
+.questionBox .inputSearchBox .inputTextBox input{height: 80px; border: 1px solid #E7E6E6; padding-left: 48px; border-radius: 50px; }
+.questionBox .inputSearchBox .btn{position: absolute; top: 50%; transform: translateY(-50%); right:15px; width: 48px; height: 48px; background: url(../images/sub/search_btn.svg)no-repeat center;}
+.questionBox .keywordList{margin-bottom: 100px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px 15px; }
+.questionBox .keywordList li{display: flex; align-items: center; justify-content: center; padding: 0 15px; height: 37px; border-radius: 50px; background-color: #F4F4F4; border: 1px solid #F1F1F1; text-align: center;
+color: #626262; font-weight: 600;}
+.questionBox .box{margin-bottom: 100px;}
+.questionBox .questionList{margin-bottom: 40px;}
+.questionBox .questionList li{border-bottom: 1px solid #F1F1F1;}
+.questionBox .questionList li a{position: relative; padding: 30px 30px 30px 0; display: flex; align-items: center; gap: 0 40px;}
+.questionBox .questionList li a.active::after{transform: translateY(-50%) rotate(-180deg);}
+.questionBox .questionList li a::after{content: ''; width: 14px; height: 9px; position: absolute; top: 50%; transform: translateY(-50%); right:6px; background: url(../images/main/arrow_icon02.svg)no-repeat center; transition: all .3s;}
+.questionBox .questionList li a span{width: 50px; text-align: center; font-size: 30px; font-weight: 700; color: #DFDFDF;}
+.questionBox .questionList li a p{display: flex; align-items: center; gap: 0 15px; font-size: 25px; font-weight: 700; color: #232323;}
+.questionBox .questionList li a p::before{content: ''; width: 35px; height: 35px; background: url(../images/main/question_icon01.svg)no-repeat center; background-size: contain;}
+.questionBox .contentBox{display: none; padding-left: 90px;}
+.questionBox .contentBox p{display: flex; gap: 0 15px; padding: 0 0 30px;font-size: 18px; color: #565656;}
+.questionBox .contentBox p::before{content: ''; flex-shrink: 0; width: 35px; height: 35px; background: url(../images/main/icon16.svg)no-repeat center; background-size: contain;}
+.questionBox .infoList{display: flex; gap: 0 40px;}
+.questionBox .infoList li{flex: 1;}
+.questionBox .infoList li a{position: relative; height: 294px; padding: 30px 20px 20px 40px; display: block; border: 1px solid #EAEAEA; border-radius: 20px;}
+.questionBox .infoList li a:hover{border: 1px solid #5D8EFF;}
+.questionBox .infoList li a:hover h3{color: #5D8EFF;}
+.questionBox .infoList li a h3{font-size: 25px; font-weight: 600; color: #A6A6A6;}
+.questionBox .infoList li a::after{content: ''; position: absolute; bottom: 40px; right: 40px; background-size: contain!important;}
+.questionBox .infoList li:nth-child(1) a::after{ width: 130px; height: 130px; background: url(../images/sub/list_icon01.svg)no-repeat center;}
+.questionBox .infoList li:nth-child(2) a::after{width: 110px; height: 110px; background: url(../images/sub/list_icon02.svg)no-repeat center;}
+.questionBox .infoList li:nth-child(3) a::after{width: 100px; height: 100px; background: url(../images/sub/list_icon03.svg)no-repeat center;}
+
+@media (max-width: 1024px){
+
+  .questionBox .questionList li a{gap: 0 20px;}
+  .questionBox .questionList li a span{font-size: 25px;}
+  .questionBox .questionList li a p{font-size: 20px;}
+  .questionBox .contentBox{padding-left: 70px;}
+  .questionBox .title{font-size: 36px;}
+  .questionBox .inputSearchBox{max-width: 100%;}
+  .questionBox .inputSearchBox .inputTextBox input{padding-left: 25px; height: 70px;}
+  .questionBox .infoList{gap: 0 20px;}
+  .questionBox .infoList li a h3{font-size: 20px;}
+
+}
+
+@media (max-width: 767px){
+
+  .questionBox .questionList li a{gap: 0 15px;}
+  .questionBox .questionList li a p{font-size: 18px;}
+  .questionBox .contentBox p{font-size: 16px;}
+
+  .questionBox .title{margin-bottom: 40px; font-size: 30px;}
+  .questionBox .inputSearchBox .inputTextBox input{padding-left: 20px; height: 45px;}
+  .questionBox .inputSearchBox .btn{width: 30px; height: 30px; background-size: contain!important;}
+  .questionBox .keywordList{gap: 7px;}
+  .questionBox .questionList,
+  .questionBox .comList{margin-bottom: 20px;}
+
+  .questionBox .infoList li a{height: 198px; padding: 20px;}
+  .questionBox .infoList li a h3{text-align: center; font-size: 18px;}
+  .questionBox .infoList li a::after{left: 50%; transform: translateX(-50%); bottom: 20px;}
+  .questionBox .infoList li:nth-child(1) a::after{width: 100px; height: 100px;}
+  .questionBox .infoList li:nth-child(2) a::after,
+  .questionBox .infoList li:nth-child(3) a::after{width: 90px; height: 90px;}
+  .questionBox .box{margin-bottom: 50px;}
+
+}
+
+@media (max-width: 576px){
+
+  .questionBox .infoList{flex-wrap: wrap; gap: 10px 0;}
+  .questionBox .infoList li{flex: none; width: 100%;}
+
+}
+
+@media (max-width: 414px){
+
+  .questionBox .questionList li a{padding: 15px 30px 15px 0;}
+  .questionBox .questionList li a span{display: none;}
+  .questionBox .contentBox p,
+  .questionBox .questionList li a p{font-size: 14px;}
+  .questionBox .contentBox{padding: 0;}
+  .questionBox .contentBox p::before,
+  .questionBox .questionList li a p::before{width: 30px; height: 30px;}
+
+  .questionBox .keywordList{margin-bottom: 70px;}
+  .questionBox .title{margin-bottom: 45px; font-size: 26px;}
+  .questionBox .keywordList li{font-size: 14px;}
+
+  .questionBox .infoList li a{height: 169px;}
+  .questionBox .infoList li a h3{font-size: 16px;}
+  .questionBox .infoList li a::after{bottom: 15px;}
+  .questionBox .infoList li:nth-child(1) a::after{width: 90px; height: 90px;}
+  .questionBox .infoList li:nth-child(2) a::after,
+  .questionBox .infoList li:nth-child(3) a::after{width: 70px; height: 80px;}
+
+}
+
+@media (max-width: 320px){
+
+  .questionBox .keywordList{margin-bottom: 50px;}
+  .questionBox .title{margin-bottom: 35px; font-size: 22px;}
+  .questionBox .inputSearchBox .inputTextBox input{height: 50px;}
+  .questionBox .keywordList li{font-size: 14px;}
+
+}
+
+/* 공지사항 상세 */
+.noticeBox .title{margin-bottom: 100px; font-size: 45px; font-weight: 700; color: #000; text-align: center;}
+.noticeBox .topTitleBox{ padding-bottom: 50px;}
+.noticeBox .topTitleBox h4{margin-bottom: 25px; font-size: 35px; font-weight: 700; color: #000;}
+.noticeBox .topTitleBox .date{font-size: 25px; font-weight: 700; color:#C0C0C0;}
+.noticeBox .content{padding: 50px 0; font-size: 18px; color: #565656;  border: 1px solid #F1F1F1; border-width: 1px 0;}
+.noticeBox .btnBox{display: flex;  gap: 0 40px; margin:20px 0 40px;}
+.noticeBox .btnBox a{flex: 1; height: 80px; line-height: 80px; background-color: #F4F4F4; border-radius: 16px; color: #B3B3B3; font-size: 20px; font-weight: 600; text-align: center;}
+.noticeBox .btnBox a span{display: flex; align-items: center; justify-content: center; gap: 0 20px;}
+.noticeBox .btnBox a.prev span::before{margin-top: -1px; content: ''; width: 17px; height: 14px; background: url(../images/sub/prev_arrow_icon.svg)no-repeat center; background-size: contain!important;}
+.noticeBox .btnBox a.next span::after{margin-top: -1px; content: ''; width: 17px; height: 14px; background: url(../images/sub/prev_arrow_icon.svg)no-repeat center; background-size: contain!important; transform: rotate(180deg);}
+
+@media (max-width: 1024px){
+
+  .noticeBox .title{font-size: 36px;}
+  .noticeBox .content{padding: 25px 0; font-size: 16px;}
+  .noticeBox .topTitleBox{padding-bottom: 25px;}
+  .noticeBox .topTitleBox h4{margin-bottom: 15px; font-size: 25px;}
+  .noticeBox .topTitleBox .date{font-size: 18px;}
+  .noticeBox .btnBox{margin-bottom: 20px;}
+  .noticeBox .btnBox a{height: 70px; line-height: 70px; font-size: 18px; border-radius: 7px;}
+
+}
+
+@media (max-width: 767px){
+
+  .noticeBox .title{font-size: 30px;}
+  .noticeBox .topTitleBox h4{margin-bottom: 10px; font-size: 22px;}
+  .noticeBox .topTitleBox .date{font-size: 16px;}
+  .noticeBox .btnBox{gap: 0 20px;}
+  .noticeBox .btnBox a{height: 60px; line-height: 60px; font-size: 16px;}
+
+}
+
+@media (max-width: 414px){
+
+  .noticeBox .title{margin-bottom: 70px; font-size: 26px;}
+  .noticeBox .topTitleBox h4{font-size: 18px;}
+  .noticeBox .btnBox{gap: 0 10px;}
+  .noticeBox .btnBox a span{gap: 0 10px;}
+  .noticeBox .btnBox a{height: 50px; line-height: 50px; font-size: 14px;}
+  .noticeBox .btnBox a.prev span::before{width: 14px; height: 11px;}
+  .noticeBox .btnBox a.next span::after{width: 14px; height: 11px;}
+
+}
+
+@media (max-width: 320px){
+
+  .noticeBox .title{margin-bottom: 50px; font-size: 20px;}
+  .noticeBox .topTitleBox h4{font-size: 14px;}
+  .noticeBox .topTitleBox .date{font-size: 14px;}
+  .noticeBox .content{font-size: 14px;}
+
+}
+
+/* 나의 자산 */
+.assetBox .assetInfoBox{margin-bottom: 32px; padding: 48px 38px; border: 1px solid #DDDDDD; border-radius: 20px; background: linear-gradient(to right, #905DFF, #5E79FF);}
+.assetBox .assetInfoBox h3{position: relative; padding-left: 65px; margin-bottom: 25px; font-weight: 700; color: #fff; font-size: 36px;}
+.assetBox .assetInfoBox h3::before{content: ''; width: 50px; height: 42px; position: absolute; top:1px; left:0; background: url(../images/sub/money_icon01.svg)no-repeat center; background-size: contain!important;}
+.assetBox .assetList li{margin-bottom: 20px; padding: 20px 30px; display: flex; align-items: center; justify-content: space-between; background-color: #4A7BEA; border-radius: 16px;}
+.assetBox .assetList li:last-child{margin-bottom: 0;}
+.assetBox .assetList li span{font-size: 18px; font-weight: 700; color: #fff;}
+.assetBox .assetList li em{color: #fff; font-weight: 700; font-size: 23px;}
+.assetBox .assetList li .highlightColor{color: #FF8A8A!important;}
+.assetBox .assetInfoBox02{margin-bottom: 32px;}
+.assetBox .assetInfoBox02 .assetInfoList{display: flex; gap: 0 32px;}
+.assetBox .assetInfoBox02 .assetInfoList > li{ flex: 1; border: 1px solid #DDDDDD; border-radius: 20px; overflow: hidden;}
+.assetBox .assetInfoBox02 .assetInfoList > li em{color: #000;}
+.assetBox .assetInfoBox02 .assetInfoList > li span{color: #9E9E9E;}
+.assetBox .assetInfoBox02 .assetInfoList > li .topProductBox{ padding: 47px 20px 40px 47px;}
+.assetBox .assetInfoBox02 .assetInfoList > li .topProductBox .my{margin-bottom: 6px; display: block; width: 43px; height: 31px; line-height: 31px; border-radius: 8px; background-color: #EBFAF9; color: #39B9B3; font-weight: 500; text-align: center;}
+.assetBox .assetInfoBox02 .assetInfoList > li .topProductBox h4{font-size: 36px; font-weight: 700; color: #000;}
+.assetBox .assetInfoBox02 .assetInfoList .assetList{padding: 25px 25px 25px 47px; background-color: #FBFBFB;}
+.assetBox .assetInfoBox02 .assetInfoList .assetList li{flex-wrap: wrap; padding: 15px 0; margin: 0; background: 0; border: 0;}
+
+@media (max-width: 1024px){
+  
+  .assetBox .assetInfoBox{padding: 40px 30px;}
+  .assetBox .assetInfoBox h3{padding-left: 45px; font-size: 26px;}
+  .assetBox .assetInfoBox h3::before{width: 40px; height: 32px;}
+  .assetBox .assetList li{margin-bottom: 10px; padding: 15px 20px; border-radius: 10px;}
+  .assetBox .assetList li em{font-size: 18px;}
+
+  .assetBox .assetInfoBox02 .assetInfoList{flex-direction: column; gap: 20px 0;}
+  .assetBox .assetInfoBox02 .assetInfoList > li{width: 100%;}
+  .assetBox .assetInfoBox02 .assetInfoList > li .topProductBox h4{font-size: 26px;}
+  .assetBox .assetInfoBox02 .assetInfoList > li .topProductBox{padding: 25px 25px;}
+  .assetBox .assetInfoBox02 .assetInfoList .assetList{padding: 20px 25px;}
+
+}
+
+@media (max-width: 767px){
+
+  .assetBox .assetInfoBox h3{padding-left: 40px; font-size: 22px;}
+  .assetBox .assetInfoBox h3::before{width: 35px; height: 27px;}
+  .assetBox .assetList li span{font-size: 16px;}
+  .assetBox .assetInfoBox{padding: 40px 20px;}
+  .assetBox .assetInfoBox02 .assetInfoList > li .topProductBox h4{font-size: 22px;}
+
+}
+
+@media (max-width: 480px){
+
+  .assetBox .assetInfoBox h3{font-size: 18px;}
+  .assetBox .assetInfoBox h3::before{top:-1px;}
+  .assetBox .assetList li span{font-size: 14px;}
+  .assetBox .assetInfoBox{padding: 40px 20px;}
+  .assetBox .assetInfoBox02 .assetInfoList > li .topProductBox h4{font-size: 18px;}
+  .assetBox .assetList li em{font-size: 16px;}
+  .assetBox .assetInfoBox02 .assetInfoList > li .topProductBox .my{font-size: 14px;}
+
+}
+
+@media (max-width: 414px){
+
+  .assetBox .assetList li span{position: relative;}
+  .assetBox .assetList li span::after{content: ''; left: 50%; position: absolute; bottom: -11px; margin-left: -3px; width: 6px; height: 1px; background-color: #fff;}
+  .assetBox .assetList li{flex-direction: column; gap: 20px 0;}
+
+}
+
+
+/* 투자하기 모달 */
+.productModalWrap01 .productModalTitleBox{margin-bottom: 20px;}
+.productModalWrap01 .productInfoText{margin-top: 20px;}
+.productModalWrap01 .productInfoText .box{padding: 15px 0; display: flex; flex-wrap: wrap; gap: 10px 0; align-items: center; justify-content: space-between; border-bottom: 1px solid #e8e8e8;}
+.productModalWrap01 .productInfoText .box span{font-size: 15px; color: #000;}
+.productModalWrap01 .productInfoText .box span em{color: #898989;}
+.productModalWrap01 .productInfoText .box em{font-size: 15px; color: #000;}
+.productModalWrap{position: fixed; bottom: -1000px; left:0; right:0; padding: 40px 20px 30px; max-width: 420px; width: 100%; margin: 0 auto; background-color: #fff; border-radius: 16px 16px 0 0; box-shadow: 0px 2px 15px #bfbfbf40; border: 1px solid #eaeaea; z-index: 9999; transition: all .5s;}
+.productModalWrap.active{bottom: 0;}
+.productModalWrap .productModalTitleBox{padding-bottom: 20px; border-bottom: 1px solid #e8e8e8;}
+.productModalWrap .productModalTitleBox h3{font-size: 22px; font-weight: 700; color: #222;}
+.productModalWrap .productModalTitleBox span{display: block; font-weight: 600; color: #5D8EFF;}
+.productModalWrap .productModalList{margin-bottom: 20px;}
+.productModalWrap .productModalList li{padding: 20px 0; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #e8e8e8;}
+.productModalWrap .productModalList li span,
+.productModalWrap .productModalList li em{color: #222;}
+.productModalWrap .productModalInputBox{margin-bottom: 16px; display: flex; align-items: center; gap: 0 10px;}
+.productModalWrap .productModalInputBox input{width: 100%; padding: 6px; height: 48px; border: 1px solid #e8e8e8; border-radius: 5px; color: #222; text-align: center;}
+.productModalWrap .productModalInputBox span{color: #222;}
+.productModalWrap .productModalInputBox input::placeholder{color: #212529;}
+.productModalWrap .productModalInputBox input:focus{outline: 1px solid #5D8EFF;}
+.productModalWrap .productModalBtnBox01{display: flex; gap: 0 7px; margin-bottom: 10px;}
+.productModalWrap .productModalBtnBox01 .productModalBtn{background-color: #E9F0FF; font-weight: 700;}
+.productModalWrap .productModalBtnBox01 .productModalBtn{flex: auto;}
+.productModalWrap .productModalBtnBox01 .productModalBtn:hover{background-color: #fff;}
+.productModalWrap .productModalBtnBox01 .productModalBtn:first-child {flex: 8;}
+.productModalWrap .productModalBtnBox01 .productModalBtn:last-child {flex: 2;}
+.productModalWrap .productModalBtnBox02{display: flex; gap: 0 7px;}
+.productModalWrap .productModalBtnBox02 .productModalBtn{flex: 1; background-color: #fff; font-weight: 700;}
+.productModalWrap .productModalBtnBox02 .productModalBtn:hover{background-color: #5D8EFF; color: #fff;}
+.productModalWrap .productModalBtn{padding: 5px; display: block; height: 38px; border-radius: 5px; color: #000; border: 1px solid #5D8EFF; transition: all .3s;}
+.productModalCloseBtn {position: absolute; left: 50%; transform: translateX(-50%);
+    top: 6px; width: 24px; height: 24px;}
+.productModalCloseBtn::before {content: "";display: inline-block; width: 11px;   height: 11px;  border-left: 2px solid #333; border-bottom: 2px solid #333;
+    transform: rotate(-45deg);}
+
+@media (max-width: 414px){
+
+  .productModalWrap .productModalBtnBox02{flex-direction: column; gap: 10px 0;}
+
+}
+
+/* 비전 */
+.visionBox .topTitleBox_01 .topTitle_0102{position: relative; text-align: center; font-size: 20px; color: #111}
+.visionBox .topTitleBox_01 .topTitle_0102 strong{display: block; margin-bottom: 10px; font-size: 48px; word-break:keep-all; line-height: 1.3;}
+.visionBox .topTitleBox_01 .topTitle_0102 span{display: block; margin-bottom: 20px; font-weight: 500; font-size: 28px; font-family: 'SCDream';}
+.visionBox .ourVisionBox_02{position: relative; height: 542px; padding: 120px 0 0; z-index: 1;}
+.visionBox .ourVisionBox_02::before{content: ''; width: 695px; position: absolute; top:0; left:0; bottom: 0; background: url(../images/sub/vision_bg01.svg)no-repeat center; z-index: -1; background-size: cover;}
+.visionBox .ourVisionBox_02::after{content: ''; width: 1104px; position: absolute; top:0; right:0; bottom: 0; background: url(../images/sub/vision_bg02.svg)no-repeat center; z-index: -1; background-size: cover;}
+.visionBox .ourVisionBox_02 h3{margin-bottom: 10px; text-align: center; font-size: 60px; color: #5D8EFF;}
+.visionBox .ourVisionBox_02 h3 span{font-size: 48px; color: #fff; /*-webkit-text-stroke: 2px #111;*/ color: #222;}
+.visionBox .ourVisionBox_02 .title_0202{margin-bottom: 80px; text-align: center; font-size: 28px; color: #111111;}
+.visionBox .ourVisionBox_02 .title_0202 strong{font-weight: 600; color: #5D8EFF;}
+.visionBox .ourVisionBox_02 .ourVisionList_0203{display: flex; gap: 0 16px;}
+.visionBox .ourVisionBox_02 .ourVisionList_0203 li{padding: 40px 20px; width: 303px;  border-radius: 20px;  background: linear-gradient(to bottom, #EAF1FF 0%, #F8F8F9 100%);}
+.visionBox .ourVisionBox_02 .ourVisionList_0203 li h4{display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: #333D4B; font-size: 24px; word-break: keep-all; text-align: center;}
+.visionBox .ourVisionBox_02 .ourVisionList_0203 li p{text-align: left; color: #333D4B;}
+.visionBox .futureDesignBox_03{padding: 160px 0 0;}
+.visionBox .futureDesignBox_03 h3{margin-bottom: 40px; font-size: 48px; color: #111111; text-align: center; word-break: keep-all;}
+.visionBox .futureDesignBox_03 h3 strong{color: #5D8EFF;}
+.visionBox .futureDesignBox_03 .futureDesignList_0302{display: flex; flex-wrap: wrap; gap: 16px 1.32%;}
+.visionBox .futureDesignBox_03 .futureDesignList_0302 > li{position: relative; width: 49.34%; padding: 40px 150px 40px 40px; border: 1px solid #ccc; border-radius: 20px;}
+.visionBox .futureDesignBox_03 .futureDesignList_0302 > li::after{content: ''; position: absolute; top:50%; right:0; transform: translateY(-50%);}
+.visionBox .futureDesignBox_03 .futureDesignList_0302 > li:nth-child(1):after{width: 80px; height: 81px; right: 40px; background: url(../images/sub/future01.png)no-repeat center; background-size: contain;}
+.visionBox .futureDesignBox_03 .futureDesignList_0302 > li:nth-child(2):after{width: 80px; height: 81px; right: 43px; background: url(../images/sub/future02.png)no-repeat center; background-size: contain;}
+.visionBox .futureDesignBox_03 .futureDesignList_0302 > li:nth-child(3):after{width: 80px; height: 81px; right: 40px; background: url(../images/sub/future03.png)no-repeat center; background-size: contain;}
+.visionBox .futureDesignBox_03 .futureDesignList_0302 > li:nth-child(4):after{width: 80px; height: 81px; right: 40px; background: url(../images/sub/future04.png)no-repeat center; background-size: contain;}
+.visionBox .futureDesignBox_03 .futureDesignList_0302 li h4{margin-bottom: 20px; font-size: 32px; color: #000;}
+.visionBox .futureDesignBox_03 .futureDesignList_0302 li .list li{padding-left: 28px; position: relative; font-size: 20px; color: #444;}
+.visionBox .futureDesignBox_03 .futureDesignList_0302 li .list li::before{content: ''; position: absolute; top:12px; left:10px; width: 5px; height: 5px; border-radius: 50%; background-color: #333;}
+.visionBox .sloganBox_05{margin-top: 80px; margin-bottom: 40px;}
+.visionBox .sloganBox_0501{padding: 80px 20px 60px; background-color: #F9F9F9; border-radius: 20px;}
+.visionBox .sloganBox_0501 .sloganLogoBox_0502{margin-bottom: 40px;}
+.visionBox .sloganBox_0501 .sloganLogoBox_0502 img{display: block; width: 200px; margin: 0 auto;}
+.visionBox .sloganBox_0501 .sloganText_0503{text-align: center; font-size: 20px;}
+.visionBox .sloganBox_0501 .sloganText_0503 strong{color: #5D8EFF; font-weight: 600;}
+.visionBox .coreValuesList_0602 > li{border-bottom: 1px solid #F5F5F5;}
+.visionBox .coreValuesList_0602 > li:first-child{border-top: 1px solid #111;}
+.visionBox .coreValuesList_0602 > li:last-child{border-bottom: 1px solid #111;}
+.visionBox .coreValuesList_0602 > li a{position: relative; display: flex; flex-direction: column; justify-content: center; padding: 40px 120px 40px 160px; transition: all .5s;}
+.visionBox .coreValuesList_0602 > li a::after{content: ''; width: 22px; height: 13px; position: absolute; top:50%; transform: translateY(-50%); right:40px; background: url(../images/sub/arrow_icon01.svg)no-repeat center; background-size: contain!important; }  
+.visionBox .coreValuesList_0602 > li.active{border-top: 1px solid #5D8EFF;}
+.visionBox .coreValuesList_0602 > li.active a::after{transform: translateY(-50%); background: url(../images/sub/arrow_icon02.png)no-repeat center;}
+.visionBox .coreValuesList_0602 > li a::before{content: ''; left: 40px; width: 80px; height: 81px; position: absolute; top: 50%; transform: translateY(-50%); background: url(../images/sub/arrow_icon02.svg)no-repeat center; background-size: contain;}
+.visionBox .coreValuesList_0602 > li:nth-child(1) a::before{ background: url(../images/sub/corevalues01.png)no-repeat center; background-size: contain;}
+.visionBox .coreValuesList_0602 > li:nth-child(2) a::before{ background: url(../images/sub/corevalues02.png)no-repeat center; background-size: contain;}
+.visionBox .coreValuesList_0602 > li:nth-child(3) a::before{ background: url(../images/sub/corevalues03.png)no-repeat center; background-size: contain;}
+.visionBox .coreValuesList_0602 > li:nth-child(4) a::before{ background: url(../images/sub/corevalues04.png)no-repeat center; background-size: contain;}
+.visionBox .coreValuesList_0602 > li:nth-child(5) a::before{ background: url(../images/sub/corevalues05.png)no-repeat center; background-size: contain;}
+.visionBox .coreValuesList_0602 > li a h3{ margin-bottom: 15px;font-size: 32px; color: #000; font-weight: 600;}
+.visionBox .coreValuesList_0602 > li a p{font-size: 20px; color: #444;}
+.visionBox .coreValuesList_0602 > li .coreValuesTextBox_0604{display: none; margin-bottom: 40px; margin-left: 160px; padding: 40px 20px 40px 40px; background-color: #F9F9F9; border-radius: 20px;}
+.visionBox .coreValuesList_0602 > li .coreValuesTextList_0605 li{margin-bottom: 40px;}
+.visionBox .coreValuesList_0602 > li .coreValuesTextList_0605 li:last-child{margin-bottom: 0;}
+.visionBox .coreValuesList_0602 > li .coreValuesTextList_0605 li h4{margin-bottom: 12px; font-size: 28px; color: #111; font-weight: 600;}
+.visionBox .coreValuesList_0602 > li .coreValuesTextList_0605 li p{color: #888; font-size: 20px;}
+
+@media (max-width: 1199px){
+
+  .visionBox .ourVisionBox_02 .ourVisionList_0203{flex-wrap: wrap; gap: 20px 2%;}
+  .visionBox .ourVisionBox_02 .ourVisionList_0203 li{width: 49%;}
+  .visionBox .ourVisionBox_02{padding: 120px 0 90px; height: auto;}
+
+  .visionBox .futureDesignBox_03{padding: 50px 0 0;}
+  .visionBox .futureDesignBox_03 h3{font-size: 42px;}
+  .visionBox .ourVisionBox_02 .ourVisionList_0203 li h4{min-height: auto;}
+
+}
+
+@media (max-width: 1024px){
+
+  .visionBox .topTitleBox_01 .topTitle_0102{font-size: 18px;}
+  .visionBox .topTitleBox_01 .topTitle_0102 strong{font-size: 36px;}
+  .visionBox .topTitleBox_01 .topTitle_0102 span{font-size: 24px;}
+  .visionBox .ourVisionBox_02 h3{font-size: 40px;}
+  .visionBox .ourVisionBox_02 h3 span{font-size: 36px;}
+  .visionBox .ourVisionBox_02{padding: 90px 0;}
+  .visionBox .ourVisionBox_02 .title_0202{margin-bottom: 50px; font-size: 20px;}
+  .visionBox .ourVisionBox_02 .ourVisionList_0203 li{padding: 30px; border-radius: 15px;}
+  .visionBox .ourVisionBox_02 .ourVisionList_0203 li h4{font-size: 26px;}
+  .visionBox .ourVisionBox_02 .ourVisionList_0203 li p{font-size: 16px;}
+
+  .visionBox .futureDesignBox_03{padding: 20px 0 0;}
+  .visionBox .futureDesignBox_03 h3{font-size: 34px;}
+  .visionBox .futureDesignBox_03 .futureDesignList_0302 > li{width: 100%; padding: 30px 150px 30px 30px; border-radius: 10px;}
+  .visionBox .futureDesignBox_03 .futureDesignList_0302 li h4{font-size: 28px;}
+  .visionBox .futureDesignBox_03 .futureDesignList_0302 li .list li{font-size: 18px;}
+
+  .visionBox .sloganBox_0501{border-radius: 10px;}
+  .visionBox .coreValuesList_0602 > li a h3{margin-bottom: 10px; font-size: 24px;}
+  .visionBox .coreValuesList_0602 > li a p{font-size: 18px;}
+  .visionBox .coreValuesList_0602 > li a{padding: 35px 120px 35px 150px;}
+  .visionBox .coreValuesList_0602 > li a::before{width: 65px; height: 65px;}
+  .visionBox .coreValuesList_0602 > li .coreValuesTextBox_0604{margin-left: 150px; border-radius: 15px;}
+  .visionBox .coreValuesList_0602 > li .coreValuesTextList_0605 li{margin-bottom: 26px;}
+  .visionBox .coreValuesList_0602 > li .coreValuesTextList_0605 li h4{font-size: 22px;}
+  .visionBox .coreValuesList_0602 > li .coreValuesTextList_0605 li p{font-size: 18px;}
+
+}
+
+@media (max-width: 767px){
+
+  .visionBox .topTitleBox_01 .topTitle_0102 strong{font-size: 28px;}
+  .visionBox .topTitleBox_01 .topTitle_0102 span{font-size: 20px;}
+  .visionBox .ourVisionBox_02{padding: 70px 0;}
+  .visionBox .ourVisionBox_02 .title_0202{margin-bottom: 40px; font-size: 18px;}
+  .visionBox .ourVisionBox_02 .ourVisionList_0203{gap: 20px 2.5%;}
+  .visionBox .ourVisionBox_02 .ourVisionList_0203 li{width: 48.7%;}
+  .visionBox .ourVisionBox_02 .ourVisionList_0203 li h4{font-size: 22px;}
+
+  .visionBox .futureDesignBox_03 h3{font-size: 28px;}
+  .visionBox .futureDesignBox_03 .futureDesignList_0302 li h4{font-size: 24px;}
+
+  .visionBox .sloganBox_0501 .sloganText_0503{font-size: 18px;}
+  .visionBox .sloganBox_0501{padding: 50px 20px;}
+
+  .visionBox .coreValuesList_0602 > li a h3{font-size: 22px;}
+  .visionBox .coreValuesList_0602 > li a p{font-size: 16px;}
+  .visionBox .coreValuesList_0602 > li a::after{width: 17px; height: 11px;}
+  .visionBox .coreValuesList_0602 > li a::before{width: 55px; height: 55px;}
+  .visionBox .coreValuesList_0602 > li .coreValuesTextBox_0604{margin: 0 0 40px; border-radius: 10px;}
+  .visionBox .coreValuesList_0602 > li .coreValuesTextList_0605 li{margin-bottom: 22px;}
+  .visionBox .coreValuesList_0602 > li .coreValuesTextList_0605 li h4{font-size: 20px;}
+  .visionBox .coreValuesList_0602 > li .coreValuesTextList_0605 li p{font-size: 16px;}
+
+}
+
+@media (max-width: 576px){
+
+  .visionBox .topTitleBox_01 .topTitle_0102{font-size: 16px;}
+  .visionBox .topTitleBox_01 .topTitle_0102 br{display: none;}
+  .visionBox .coreValuesList_0602 > li .coreValuesTextBox_0604{padding:20px;}
+  .visionBox .coreValuesList_0602 > li a{padding: 101px 20px 35px;}
+  .visionBox .coreValuesList_0602 > li a::before{transform: none; top:28px; left: 20px;}
+  .visionBox .coreValuesList_0602 > li a::after{transform: none; top: 45px; right: 20px;}
+  
+}
+
+@media (max-width: 480px){
+
+  .visionBox .ourVisionBox_02{padding: 60px 0;}
+  .visionBox .ourVisionBox_02 h3 span{font-size: 32px; -webkit-text-stroke: 1px #111;}
+  .visionBox .ourVisionBox_02 h3{font-size: 36px;}
+  .visionBox .ourVisionBox_02 .ourVisionList_0203 li{width: 100%;}
+  .visionBox .ourVisionBox_02 .ourVisionList_0203 li h4{font-size: 20px;}
+  .visionBox .ourVisionBox_02 .title_0202{font-size: 16px;}
+  .visionBox .ourVisionBox_02 .title_0202 br{display: none;}
+
+  .visionBox .futureDesignBox_03 .futureDesignList_0302 > li{padding: 140px 20px 30px; text-align: center;}
+  .visionBox .futureDesignBox_03 .futureDesignList_0302 li .list{display: inline-block; text-align: left;}
+  .visionBox .futureDesignBox_03 .futureDesignList_0302 > li:after{width: 70px!important; height: 70px!important; transform: translateX(-50%); top:38px; left:50%; right: auto!important;}
+  .visionBox .futureDesignBox_03 h3{font-size: 24px;}
+  .visionBox .futureDesignBox_03{padding: 25px 0;}
+  .visionBox .futureDesignBox_03 .futureDesignList_0302 li h4{font-size: 22px;}
+  .visionBox .futureDesignBox_03 .futureDesignList_0302 li .list li{padding-left: 23px; font-size: 16px;}
+  .visionBox .futureDesignBox_03 .futureDesignList_0302 li .list li::before{top: 10px; width: 3px; height: 3px;}
+
+  .visionBox .sloganBox_05{margin-top: 0;}
+  .visionBox .sloganBox_0501 .sloganText_0503 br{display: none;}
+
+  .visionBox .sloganBox_0501 .sloganLogoBox_0502 img{width: 150px;}
+
+}
+
+@media (max-width: 414px){
+
+  .visionBox .topTitleBox_01 .topTitle_0102 strong{font-size: 26px;}
+  .visionBox .topTitleBox_01 .topTitle_0102 span{font-size: 16px;}
+
+}
+
+/* 인재채용 */
+.employmentBox .topSelectBtn .active{color: #5D8EFF; background-color: #E9F0FF; border: 0;}
+
+/* 애널리스트 */
+.analystBox h3{margin-bottom: 50px; text-align: center; font-weight: 800; color: #292a29; font-size: 40px;}
+.analystBox .analystInfoBox{margin-bottom: 50px;}
+.analystBox .analystInfoBox .layoutBox{display: flex; align-items: center; gap: 0 150px;}
+.analystBox .analystInfoBox .imgBox{flex-shrink: 0; width: 409px; margin-left: 30px;}
+.analystBox .analystInfoBox .imgBox img{display: block; width: 100%;}
+.analystBox .analystInfoBox .textBox{padding-bottom: 30px;}
+.analystBox .analystInfoBox .textBox .analystTopBox{margin-bottom: 20px; padding-bottom: 25px; border-bottom: 1px solid #d4d4d4;}
+.analystBox .analystInfoBox .textBox .title{margin-bottom: 25px; font-weight: 800; font-size: 24px; color: #292a29; line-height: 1.2;}
+.analystBox .analystInfoBox .textBox .text{font-size: 18px; color: #292a29; line-height: 1.2; font-weight: 600; word-break: keep-all;}
+.analystBox .infoBox .box{display: flex;}
+.analystBox .infoBox .box span{width: 76px; flex-shrink: 0; color: #747474;}
+.analystBox .infoBox .box em{color: #747474;}
+.analystBox .infoBox h4{margin-bottom: 10px; font-size: 20px;}
+.analystBox .infoBox h4 span{font-size: 18px; color: #292a29; font-weight: 500;}
+.analystBox .analystInfoBox .logoBox{display: flex; align-items: center; justify-content: center; height: 48px; background-color: #292a2a; border-radius: 10px;}
+.analystBox .analystInfoBox .logoBox img{display: block; }
+.analystBox .infoText{position: relative; padding: 20px 0 56px; text-align: center; font-size: 18px; color: #292a29; font-weight: 500; line-height: 1.2;}
+.analystBox .infoText::before{content: ''; position: absolute; top:0; left:50%; width: 60px; height: 2px; margin-left: -30px; background-color: #f0d7af;}
+.analystBox .analystInfoList{display: flex; flex-wrap: wrap; gap: 20px 2%;}
+.analystBox .analystInfoList li{width: 49%; min-height: 240px; padding: 22px 22px 0 22px; display: flex; gap: 0 50px; background-color: #f8f8f8; border-radius: 10px;}
+.analystBox .analystInfoList li .imgBox{width: 153px;}
+.analystBox .analystInfoList li .imgBox img{display: block;}
+.analystBox .analystInfoList li .textBox{padding: 24px 0 20px;}
+
+@media (max-width: 1024px){
+
+  .analystBox h3{font-size: 32px;}
+  .analystBox .analystInfoBox .layoutBox{flex-direction: column; gap: 30px 0;}
+  .analystBox .analystInfoBox .imgBox{width: 400px; margin-left: -90px;}
+  .analystBox .analystInfoBox .textBox{width: 100%;}
+  .analystBox .analystInfoBox .textBox .title{font-size: 22px;}
+
+  .analystBox .analystInfoList{flex-direction: column; gap: 30px 0;}
+  .analystBox .analystInfoList li{width: 100%; justify-content: center;}
+  
+}
+
+@media (max-width: 767px){
+
+    .analystBox h3{font-size: 26px;}
+    .analystBox .analystInfoBox .textBox .title{font-size: 20px;}
+    .analystBox .analystInfoBox .textBox .text{font-size: 16px;}
+    .analystBox .infoBox h4{font-size: 18px;}
+    .analystBox .infoBox h4 span{font-size: 16px;}
+    .analystBox .analystInfoBox .logoBox{border-radius: 5px;}
+    
+    .analystBox .infoText::before{width: 30px; margin-left: -15px;}
+    .analystBox .infoText{font-size: 16px;}
+
+    .analystBox .analystInfoList li{flex-direction: column; align-items: center;}
+
+}
+
+@media (max-width: 480px){
+
+  .analystBox h3{font-size: 22px;}
+  .analystBox .analystInfoBox .imgBox{width: 100%; margin: 0;}
+  .analystBox .analystInfoBox .textBox .title{margin-bottom: 15px; font-size: 18px;}
+  .analystBox .analystInfoBox .textBox .text{font-size: 14px;}
+  .analystBox .infoBox h4{font-size: 16px;}
+  .analystBox .infoBox h4 span{font-size: 14px;}
+  .analystBox .infoBox .box span,
+  .analystBox .infoBox .box em{font-size: 14px;}
+  .analystBox .infoText::before{width: 15px; margin-left: -7.5px;}
+  .analystBox .infoText{font-size: 14px;}
+  .analystBox .infoText br{display: none;}
+  .analystBox .infoBox .box span{width: 65px;}
+
+}
+
+@media (max-width: 414px){
+
+  .analystBox .analystInfoBox .textBox .text br{display: none;}
+
+}
