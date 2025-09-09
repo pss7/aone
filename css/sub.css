@@ -1136,8 +1136,9 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 .questionBox .title{margin-bottom: 60px; text-align: center; font-size: 45px; font-weight: 700;}
 .questionBox .inputSearchBox{position: relative; max-width: 600px; margin: 0 auto 20px; }
 .questionBox .inputSearchBox .inputTextBox input{height: 80px; border: 1px solid #E7E6E6; padding-left: 48px; border-radius: 50px; }
-.questionBox .inputSearchBox .btn{position: absolute; top: 50%; transform: translateY(-50%); right:15px; width: 48px; height: 48px; background: url(../images/sub/search_btn.svg)no-repeat center;}
-.questionBox .keywordList{margin-bottom: 100px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px 15px; }
+.questionBox .inputSearchBox .btn{position: absolute; top: 50%; transform: translateY(-50%); right:15px; width: 48px; height: 48px; background: #5E79FF url(../images/sub/search_icon.svg)no-repeat center; border-radius: 50%;}
+.questionBox .keywordListBox{text-align: center;}
+.questionBox .keywordList{margin-bottom: 100px; display: inline-flex; flex-wrap: wrap; align-items: center; gap: 8px 15px; }
 .questionBox .keywordList li{display: flex; align-items: center; justify-content: center; padding: 0 15px; height: 37px; border-radius: 50px; background-color: #F4F4F4; border: 1px solid #F1F1F1; text-align: center;
 color: #626262; font-weight: 600;}
 .questionBox .box{margin-bottom: 100px;}
@@ -1185,8 +1186,8 @@ color: #626262; font-weight: 600;}
 
   .questionBox .title{margin-bottom: 40px; font-size: 30px;}
   .questionBox .inputSearchBox .inputTextBox input{padding-left: 20px; height: 45px;}
-  .questionBox .inputSearchBox .btn{width: 30px; height: 30px; background-size: contain!important;}
-  .questionBox .keywordList{gap: 7px;}
+  .questionBox .inputSearchBox .btn{right: 10px; width: 35px; height: 35px; background-size: 20px;}
+  .questionBox .keywordList{margin-bottom: 50px; gap: 7px;}
   .questionBox .questionList,
   .questionBox .comList{margin-bottom: 20px;}
 
@@ -1217,7 +1218,6 @@ color: #626262; font-weight: 600;}
   .questionBox .contentBox p::before,
   .questionBox .questionList li a p::before{width: 30px; height: 30px;}
 
-  .questionBox .keywordList{margin-bottom: 70px;}
   .questionBox .title{margin-bottom: 45px; font-size: 26px;}
   .questionBox .keywordList li{font-size: 14px;}
 
@@ -1232,7 +1232,6 @@ color: #626262; font-weight: 600;}
 
 @media (max-width: 320px){
 
-  .questionBox .keywordList{margin-bottom: 50px;}
   .questionBox .title{margin-bottom: 35px; font-size: 22px;}
   .questionBox .inputSearchBox .inputTextBox input{height: 50px;}
   .questionBox .keywordList li{font-size: 14px;}
