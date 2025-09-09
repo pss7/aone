@@ -1135,7 +1135,7 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 /* 자주묻는 질문 */
 .questionBox .title{margin-bottom: 60px; text-align: center; font-size: 45px; font-weight: 700;}
 .questionBox .inputSearchBox{position: relative; max-width: 600px; margin: 0 auto 20px; }
-.questionBox .inputSearchBox .inputTextBox input{height: 80px; border: 1px solid #E7E6E6; padding-left: 48px; border-radius: 50px; }
+.questionBox .inputSearchBox .inputTextBox input{height: 80px; border: 1px solid #E7E6E6; padding:0 90px 0 48px; border-radius: 50px; }
 .questionBox .inputSearchBox .btn{position: absolute; top: 50%; transform: translateY(-50%); right:15px; width: 48px; height: 48px; background: #5E79FF url(../images/sub/search_icon.svg)no-repeat center; border-radius: 50%;}
 .questionBox .keywordListBox{text-align: center;}
 .questionBox .keywordList{margin-bottom: 100px; display: inline-flex; flex-wrap: wrap; align-items: center; gap: 8px 15px; }
@@ -1172,7 +1172,7 @@ color: #626262; font-weight: 600;}
   .questionBox .contentBox{padding-left: 70px;}
   .questionBox .title{font-size: 36px;}
   .questionBox .inputSearchBox{max-width: 100%;}
-  .questionBox .inputSearchBox .inputTextBox input{padding-left: 25px; height: 70px;}
+  .questionBox .inputSearchBox .inputTextBox input{padding:0 90px 0 30px; height: 70px;}
   .questionBox .infoList{gap: 0 20px;}
   .questionBox .infoList li a h3{font-size: 20px;}
 
@@ -1185,8 +1185,8 @@ color: #626262; font-weight: 600;}
   .questionBox .contentBox p{font-size: 16px;}
 
   .questionBox .title{margin-bottom: 40px; font-size: 30px;}
-  .questionBox .inputSearchBox .inputTextBox input{padding-left: 20px; height: 45px;}
-  .questionBox .inputSearchBox .btn{right: 10px; width: 35px; height: 35px; background-size: 20px;}
+  .questionBox .inputSearchBox .inputTextBox input{padding:0 50px 0 20px;  height: 45px;}
+  .questionBox .inputSearchBox .btn{right: 10px; width: 35px; height: 35px; background-size: 15px;}
   .questionBox .keywordList{margin-bottom: 50px; gap: 7px;}
   .questionBox .questionList,
   .questionBox .comList{margin-bottom: 20px;}
