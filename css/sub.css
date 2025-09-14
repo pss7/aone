@@ -463,7 +463,7 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 .productDetailBox .titleBox_02 span{text-align: left!important; font-size: 20px!important; font-weight: 700!important; color: #fff!important;}
 .productDetailBox .titleBox_01.active::after{transform: scale(1);}
 .productDetailBox .titleBox_01 .title_0102 {line-height: 1.2;}
-.productDetailBox .titleBox_01 .title_0102 span{display: block; margin-bottom: 8px; text-align: center; font-size: 24px; font-weight: 500; color: #fff;}
+.productDetailBox .titleBox_01 .title_0102 span{display: block; margin-bottom: 8px; text-align: center; font-size: 24px; font-weight: 500; color: #fff; text-transform: uppercase;}
 .productDetailBox .titleBox_01 .title_0102 h3{width: 100%; text-align: center; color: #fff; font-size: 80px; font-weight: 900;}
 .productDetailBox .titleBox_01 .title_0102 em{display: block; width: 236px; height: 48px; line-height: 48px; margin: 0 auto; border-radius: 8px; font-weight: 600; font-size: 20px; color: #fff; background-color: #222; text-align: center; letter-spacing: -1px;} 
 .productDetailBox .titleBox_01 .titleInfoList_0103{display: flex; align-items: center; }
