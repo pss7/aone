@@ -602,12 +602,12 @@ background: rgba(255,255,255,0.2); backdrop-filter: blur(8px); -webkit-backdrop-
 #questionWrap .questionListBox{padding-top: 34px; position: relative;}
 #questionWrap h3{margin-bottom: 50px; color: #000; font-size: 40px; font-weight: 700;}
 #questionWrap .questionList li{border-bottom: 1px solid #F1F1F1;}
-#questionWrap .questionList li a{position: relative; padding: 30px 30px 30px 0; display: flex; align-items: center; gap: 0 40px;}
+#questionWrap .questionList li a{position: relative; padding: 30px 30px 30px 0; display: flex; align-items: center; gap: 0 30px;}
 #questionWrap .questionList li a.active::after{transform: translateY(-50%) rotate(-180deg);}
 #questionWrap .questionList li a::after{content: ''; width: 14px; height: 9px; position: absolute; top: 50%; transform: translateY(-50%); right:6px; background: url(../images/main/arrow_icon02.svg)no-repeat center; transition: all .3s;}
-#questionWrap .questionList li a span{width: 50px; text-align: center; font-size: 30px; font-weight: 700; color: #DFDFDF;}
-#questionWrap .questionList li a p{display: flex; align-items: center; gap: 0 15px; font-size: 25px; font-weight: 700; color: #232323;}
-#questionWrap .questionList li a p::before{content: ''; width: 35px; height: 35px; background: url(../images/main/question_icon01.svg)no-repeat center; background-size: contain;}
+#questionWrap .questionList li a span{width: 50px; text-align: center; font-size: 30px; font-weight: 700; color: #DFDFDF; background: linear-gradient(to right, #905DFF, #5E79FF); -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
+#questionWrap .questionList li a p{font-size: 25px; font-weight: 700; color: #232323;}
 #questionWrap .contentBox{display: none; padding-left: 90px;}
 #questionWrap .contentBox p{display: flex; gap: 0 15px; padding: 0 0 30px;font-size: 18px; color: #565656;}
 #questionWrap .contentBox p::before{content: ''; flex-shrink: 0; width: 35px; height: 35px; background: url(../images/main/icon16.svg)no-repeat center; background-size: contain;}
