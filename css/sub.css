@@ -356,6 +356,7 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 
 @media (max-width: 1024px){
 
+  .productBox .productList li a .badge{width: 90px;}
   .productBox .productList li .textBox{min-height: auto; padding: 40px 30px 25px;}
   .productBox .productList li .textBox h4{font-size: 26px;}
   .productBox .productList li .textBox p{font-size: 18px;}
@@ -382,13 +383,13 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
   .productBox .top::after{top: 50%; transform: translateY(-50%); width: 200px; height: 135px;}
   
   .productBox .productList li{width: 100%;}
+  .productBox .productList li a .badge{width: 70px;}
   .productBox .productList li .textBox .infoBox{gap: 0 8px; margin-bottom: 20px;}
   .productBox .productList li .textBox{padding: 30px 20px 25px;}
   .productBox .productList li .textBox h4{font-size: 24px; text-align: center;}
   .productBox .productList li .textBox p{font-size: 16px; text-align: center;}
   .productBox .productList li .infoListBox .box strong{font-size: 18px;}
   .productBox .productList li .infoListBox .box span{margin-bottom: 5px;}
-  .productBox .productList li a .badge{width: 100px;}
 
   .productBox .productList{margin-bottom: 40px;}
   .infoTextBox h4{font-size: 24px;}
