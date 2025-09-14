@@ -356,13 +356,11 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 
 @media (max-width: 1024px){
 
-  .productBox .productList li .textBox{padding: 40px 20px 40px 35px;}
+  .productBox .productList li .textBox{min-height: auto; padding: 40px 30px 25px;}
   .productBox .productList li .textBox h4{font-size: 26px;}
   .productBox .productList li .textBox p{font-size: 18px;}
-  .productBox .productList li .infoListBox{padding: 35px 20px 35px 35px;}
   .productBox .productList li .infoListBox .box strong{font-size: 22px;}
   .productBox .productList li .infoListBox .box span{margin-bottom: 10px;}
-  .productBox .productList li .infoListBox{gap: 0 35px;}
   
   .productBox .top span{font-size: 18px;}
   .productBox .top .title{font-size: 32px;}
@@ -384,13 +382,12 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
   .productBox .top::after{top: 50%; transform: translateY(-50%); width: 200px; height: 135px;}
   
   .productBox .productList li{width: 100%;}
-  .productBox .productList li .textBox{padding: 35px 20px 35px 30px;}
-  .productBox .productList li .textBox h4{font-size: 24px;}
-  .productBox .productList li .textBox p{font-size: 16px;}
-  .productBox .productList li .infoListBox{padding: 30px 20px 30px 30px;}
+  .productBox .productList li .textBox .infoBox{gap: 0 8px; margin-bottom: 20px;}
+  .productBox .productList li .textBox{padding: 30px 20px 25px;}
+  .productBox .productList li .textBox h4{font-size: 24px; text-align: center;}
+  .productBox .productList li .textBox p{font-size: 16px; text-align: center;}
   .productBox .productList li .infoListBox .box strong{font-size: 18px;}
   .productBox .productList li .infoListBox .box span{margin-bottom: 5px;}
-  .productBox .productList li .infoListBox{gap: 0 30px;}
   .productBox .productList li a .badge{width: 100px;}
 
   .productBox .productList{margin-bottom: 40px;}
@@ -409,8 +406,9 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
   .productBox .top span{font-size: 16px;}
   .productBox .top .title{font-size: 22px;}
 
-  .productBox .productList li .textBox{padding: 35px 20px 35px 25px;}
-  .productBox .productList li .infoListBox{padding: 30px 20px 30px 25px;}
+  .productBox .productList li .textBox{padding: 25px 20px;}
+  .productBox .productList li .textBox .infoBox{margin-bottom: 15px;}
+  .productBox .productList li .infoListBox{padding: 30px 15px;}
   .productBox .productList li .textBox .infoBox span{font-size: 14px; border-radius: 5px;}
   .productBox .productList li .textBox h4{margin-bottom: 8px; font-size: 20px;}
   .productBox .productList li .textBox p{font-size: 14px;}
@@ -487,6 +485,7 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 .productDetailBox .infoBox_02 .infoList_0202 li span{margin-bottom: 10px; font-size: 20px; font-weight: 700; color: #5D8EFF; }
 .productDetailBox .infoBox_02 .infoList_0202 li strong{margin: 0; font-size: 22px; font-weight: 700;  line-height: 1.2; color: #333D4B;}
 .productDetailBox .infoBox_02 .infoListType01 li{display: flex!important; align-items: flex-start!important; flex-direction: row; gap: 0 20px}
+.productDetailBox .infoBox_02 .infoListType01 li p{margin-bottom: 0;}
 .productDetailBox .infoBox_02 .infoList_0203 li{color: #767676; font-weight: 500;}
 .productDetailBox .infoBox_05{padding: 80px; border-radius: 32px; background: url(../images/sub/bg01.jpg)no-repeat center top; background-size: cover; background-attachment: fixed;}
 .productDetailBox .infoBox_05 .box{margin-bottom: 80px;}
@@ -513,7 +512,7 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
   .productDetailBox .titleBox_02 span,
   .productDetailBox .titleBox_02 h3{text-align: center!important;}
   .productDetailBox .infoBox_02 .infoList_0202 li{padding: 20px; align-items: center;}
-  .productDetailBox .titleBox_01 .title_0102 h3{font-size: 50px!important;}
+  .productDetailBox .titleBox_01 .title_0102 h3{font-size: 24px!important;}
   .productDetailBox .titleBox_01{padding: 50px 20px; border-radius: 20px;}
   .productDetailBox .infoBox_02 .infoBox strong{font-size: 26px;}
   .productDetailBox .infoBox_02 .infoList_0202 li span,
@@ -521,7 +520,7 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
   .productDetailBox .titleBox_01 .title_0102 span,
   .productDetailBox .infoBox_02 .infoBox p{font-size: 18px!important;}
   .productDetailBox .infoBox_02 .infoBox p.textType01{display: inline-block; text-align: left!important;}
-  .productDetailBox .infoBox_02 .infoList_0202 li strong{font-size: 16px;}
+  .productDetailBox .infoBox_02 .infoList_0202 li strong{margin-top: 3px; font-size: 16px;}
   .productDetailBox .infoBox_05 .title_0502{margin-bottom: 20px; font-size: 30px;}
   .productDetailBox .infoBox_05 .text_0503{font-size: 18px;}
   .productDetailBox .infoBox_05 .infoList_0504 li strong{font-size: 20px;}
@@ -542,7 +541,7 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
   .productDetailBox .infoBox_02{margin-bottom: 45px;}
   .productDetailBox .infoBox_02 .sectionText{margin-bottom: 10px;}
   .productDetailBox .titleBox_01 .title_0102 span{font-size: 18px;}
-  .productDetailBox .titleBox_01 .title_0102 h3{font-size: 24px!important;}
+  .productDetailBox .titleBox_01 .title_0102 h3{font-size: 20px!important;}
   .productDetailBox .titleBox_01{padding: 50px 20px 45px; border-radius: 15px;}
   .productDetailBox .infoBox_02 .infoBox strong{font-size: 22px;}
   .productDetailBox .infoBox_02 .infoList_0202 li span,
@@ -557,10 +556,14 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
   .productDetailBox .infoBox_05{padding: 50px 30px;}
 
   .detail_btn{font-size: 16px;}
-
+  .productDetailBox .infoBox_02 .infoBox strong{margin-bottom: 15px;}
   .productDetailBox .infoBox_03 .infoList li span{font-size: 16px;}
   .productDetailBox .infoBox_03 .infoList li strong{font-size: 22px;}
   .productDetailBox .infoBox_03 .infoList li::after{height: 15px; margin-top: -7.5px;}
+
+  .productDetailBox .infoBox_03 .infoList{position: relative; flex-wrap: wrap; gap: 70px 0; z-index: 1; }
+  .productDetailBox .infoBox_03 .infoList li{flex: none; width: 50%;}
+  .productDetailBox .infoBox_03 .infoList li:nth-child(even)::after{display: none;}
 
 }
 
@@ -568,8 +571,8 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 
   .productDetailBox .infoBox_05 .box{margin-bottom: 50px;}
   .productDetailBox .titleBox_01 .title_0102 span{font-size: 16px;}
-  .productDetailBox .titleBox_01 .title_0102 h3{font-size: 20px!important;}
-  .productDetailBox .titleBox_01{margin-bottom: 0; padding:40px 20px 35px; border-radius: 10px;}
+  .productDetailBox .titleBox_01 .title_0102 h3{font-size: 18px!important;}
+  .productDetailBox .titleBox_01{padding:40px 20px 35px; border-radius: 10px;}
   .productDetailBox .infoBox_02 .infoBox strong{font-size: 18px;}
   .productDetailBox .infoBox_02 .infoList_0202 li span,
   .productDetailBox .infoBox_02 .sectionText,
@@ -585,13 +588,16 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 
   .detail_btn{font-size: 14px;}
 
-  .productDetailBox .infoBox_03{margin: 40px auto 60px; border-radius: 10px;}
-  .productDetailBox .infoBox_03 .infoList{position: relative; flex-direction: column; gap: 70px 0; z-index: 1;}
-  .productDetailBox .infoBox_03 .infoList::before{content: ""; position: absolute; top:0; left:0; right:0; bottom: 0; z-index: 999; background-color: rgba(0,0,0,.3); z-index: -1;}
+  .productDetailBox .infoBox_02 .infoList_0202{margin-top: 0;}
+  .productDetailBox .infoBox_03{margin: 30px auto 40px; border-radius: 10px;}
+  .productDetailBox .infoBox_03 .infoList{padding: 35px 15px 30px; gap: 34px 0;}
   .productDetailBox .infoBox_03 .infoList li span{margin-bottom: 5px; font-size: 14px;}
-  .productDetailBox .infoBox_03 .infoList li strong{font-size: 18px;}
-  .productDetailBox .infoBox_03 .infoList li::after{top: auto; bottom: -35px; top: auto;
-   left: 50%; margin-left: -6.5px;  width: 13px; height: 1px; margin-top:0}
+  .productDetailBox .infoBox_03 .infoList li strong{font-size: 16px;}
+
+}
+
+@media (max-width: 414px){
+
 
 
 }
