@@ -812,12 +812,21 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 .newsBox .slick-dots{position: absolute; left: 0; bottom: 33px; display: flex!important; gap: 0 9px; align-items: center; justify-content: center;}
 .newsBox .slick-dots li.slick-active button{background: #5D8EFF;}
 .newsBox .slick-dots li button{display: block; width: 9px; height: 9px; text-indent: -9999px; border-radius: 50px; background-color:#D9D9D9; cursor: pointer;}
-.newsBox .controlBox{position: absolute; left:414px; bottom: 19px;; display: flex; gap: 0 7px;}
-.newsBox .controlBox button{position: relative; width: 40px; height: 40px; border-radius: 50%; border: 1px solid hsl(220, 10%, 94%); background-color: #fff;}
+/* .newsBox .controlBox{position: absolute; left:414px; bottom: 19px;; display: flex; gap: 0 7px;} */
+.newsBox .controlBox button.prev{left:-100px;}
+.newsBox .controlBox button.next{right:-100px;}
+.newsBox .controlBox button{position: absolute; top: 50%; transform: translateY(-50%); width: 40px; height: 40px; border-radius: 50%; border: 1px solid hsl(220, 10%, 94%); background-color: #fff; box-shadow: 0 5px 10px rgba(0,0,0,.05);}
 .newsBox .controlBox button::after{width: 8px; height: 15px; content: ''; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background-size: contain!important;}
 .newsBox .controlBox .prev::after{transform: translate(-50%, -50%) rotate(180deg); background: url(../images/main/arrow_icon03.svg)no-repeat center;}
 .newsBox .controlBox .next::after{ background: url(../images/main/arrow_icon03.svg)no-repeat center;}
 .newsBox .slick-track{ margin: initial!important;}
+
+@media (max-width: 1480px){
+
+  .newsBox .controlBox button.prev{left:0;}
+  .newsBox .controlBox button.next{right:0;}
+
+}
 
 @media (max-width: 1199px){
 
@@ -829,6 +838,8 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
   .newsBox .controlBox{position: absolute; bottom: auto; top:-60px; left:0;}
   .newsBox .box .imgBox{margin-bottom: 30px;}
   .newsBox .box .textBox{width: 100%;}
+
+  .newsBox .controlBox button{position: relative; top: 0; transform: none;}
 
 }
 
