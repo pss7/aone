@@ -333,7 +333,6 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 .productBox .productList li .textBox .infoBox span{padding: 4px 11px; border-radius: 8px; font-weight: 500;}
 .productBox .productList li .textBox .infoBox span.best{background-color: #E9F0FF; color: #5D8EFF;}
 .productBox .productList li .textBox .infoBox span.new{background-color: #EBFAF9; color: #39B9B3;}
-
 .productBox .productList li.deadlineBox a,
 .productBox .productList li.deadlineBox .infoListBox{opacity: .5;}
 .productBox .productList li.deadlineBox a{background-color: #ddd; pointer-events: none !important;}
@@ -454,7 +453,7 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 .productDetailBox .infoBox_03 .infoList li::after{content: ''; position: absolute; top:50%; right:0; margin-top: -10px; width: 1px; height: 20px; background-color: #fff;}
 .productDetailBox .infoBox_03 .infoList li:last-child::after{display: none;}
 .productDetailBox .infoBox_03 .infoList li span{display: block; margin-bottom: 10px; font-size: 20px; font-weight: 600; color: #fff;} 
-.productDetailBox .infoBox_03 .infoList li strong{display: block; font-size: 28px; color: #fff;}
+.productDetailBox .infoBox_03 .infoList li strong{display: block; font-size: 20px; color: #fff;}
 .productDetailBox .titleBox_01{position: relative; margin-bottom: 50px; padding: 80px 20px 75px;  border-radius: 32px; z-index: 1; overflow: hidden;}
 .productDetailBox .titleBox_01::after{content: ''; position: absolute; top:0; left:0; right:0; bottom: 0;background: url(../images/sub/bg.png) no-repeat center; background-size: cover; z-index: -1;}
 .productDetailBox .titleBox_02{position: relative; padding: 40px 20px 35px!important; border-radius: 20px!important;}
@@ -570,7 +569,7 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
   .productDetailBox .infoBox_05 .box{margin-bottom: 50px;}
   .productDetailBox .titleBox_01 .title_0102 span{font-size: 16px;}
   .productDetailBox .titleBox_01 .title_0102 h3{font-size: 20px!important;}
-  .productDetailBox .titleBox_01{padding:40px 20px 35px; border-radius: 10px;}
+  .productDetailBox .titleBox_01{margin-bottom: 0; padding:40px 20px 35px; border-radius: 10px;}
   .productDetailBox .infoBox_02 .infoBox strong{font-size: 18px;}
   .productDetailBox .infoBox_02 .infoList_0202 li span,
   .productDetailBox .infoBox_02 .sectionText,
@@ -586,7 +585,7 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 
   .detail_btn{font-size: 14px;}
 
-  .productDetailBox .infoBox_03{border-radius: 10px;}
+  .productDetailBox .infoBox_03{margin: 40px auto 60px; border-radius: 10px;}
   .productDetailBox .infoBox_03 .infoList{position: relative; flex-direction: column; gap: 70px 0; z-index: 1;}
   .productDetailBox .infoBox_03 .infoList::before{content: ""; position: absolute; top:0; left:0; right:0; bottom: 0; z-index: 999; background-color: rgba(0,0,0,.3); z-index: -1;}
   .productDetailBox .infoBox_03 .infoList li span{margin-bottom: 5px; font-size: 14px;}
