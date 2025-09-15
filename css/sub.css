@@ -787,7 +787,7 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 
   .introduceBox .infoBox02 .titleBox,
   .introduceBox .infoBox .titleBox{margin-bottom: 50px;}
-  
+
 }
 
 @media (max-width: 414px){
@@ -1033,7 +1033,7 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 .applicationBox .tabBox{display: flex;}
 .applicationBox .tabBox .tab{flex: 1; height: 76px; text-align: center; color: #B3B3B3; font-size: 23px; font-weight: 600;}
 .applicationBox .tabBox .tab.active{color: #5D8EFF; border-bottom: 1px solid #5D8EFF;}
-.applicationBox .applicationContentBox{background-color: #E9F0FF;}
+.applicationBox .applicationContentBox{background-color: #fbfbfb;}
 .applicationBox .contentBox .infoList{margin-bottom: 49px; display: flex; gap: 0 23px;}
 .applicationBox .contentBox .infoList li{flex: 1; position: relative; padding: 70px 30px 30px 30px; border: 1px solid #EAEAEA; border-radius: 20px; background-color: #fff;}
 .applicationBox .contentBox{padding: 50px 0 80px;}
