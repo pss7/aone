@@ -87,8 +87,8 @@
 } */
 
 /* 공통 - 텍스트 색상 */
-.gradientText{background: linear-gradient(to right, #905DFF, #5E79FF);
-  -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline-block;}
+/* .gradientText{background: linear-gradient(to right, #905DFF, #5E79FF);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline-block;} */
 .mainColor{color: #5D8EFF;}
 .mainBgColor{background-color: #5D8EFF;}
 .mainGradientBg{background: linear-gradient(to right, #905DFF, #5E79FF);}
