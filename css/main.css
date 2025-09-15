@@ -311,7 +311,7 @@ background: rgba(255,255,255,0.2); backdrop-filter: blur(8px); -webkit-backdrop-
 }
 
 /* 더골드 사용자 영역 */
-#userWrap{position: relative; padding: 140px 0; z-index: 1; background-color: #fff;}
+#userWrap{position: relative; padding: 100px 0; z-index: 1; background-color: #fff;}
 /* #userWrap::after{content:''; position: absolute; top:0; left:0; right:0; bottom: 0; background: url(../images/main/main_bg02.jpg)no-repeat center; background-size: cover; z-index: -1;} */
 #userWrap .titleBox{margin-bottom: 110px;}
 #userWrap .titleBox strong{position: relative;}
@@ -331,7 +331,6 @@ background: rgba(255,255,255,0.2); backdrop-filter: blur(8px); -webkit-backdrop-
 
 @media (max-width: 1199px){
 
-  #userWrap{padding: 130px 0 140px;}
   #userWrap .titleBox{margin-bottom: 75px;}
   #userWrap .list li strong .text02,
   #userWrap .list li strong{font-size: 40px;}
@@ -343,8 +342,9 @@ background: rgba(255,255,255,0.2); backdrop-filter: blur(8px); -webkit-backdrop-
 
 }
 
-@media (max-width: 890px){
+@media (max-width: 1024px){
 
+  #userWrap{padding: 30px 0 80px;}
   #userWrap .titleBox{margin-bottom: 50px;}
   #userWrap .list{flex-direction: column; gap: 20px 0;}
   #userWrap .list li strong{margin-bottom: 20px;}
@@ -353,7 +353,7 @@ background: rgba(255,255,255,0.2); backdrop-filter: blur(8px); -webkit-backdrop-
 
 @media (max-width: 767px){
 
-  #userWrap{padding: 100px 0 80px;}
+  #userWrap{padding: 0 0 80px;}
   #userWrap .list li .text01{font-size: 16px;}
   #userWrap .list li strong .text02,
   #userWrap .list li strong{font-size: 26px;}
@@ -369,7 +369,6 @@ background: rgba(255,255,255,0.2); backdrop-filter: blur(8px); -webkit-backdrop-
 
 @media (max-width: 480px){
 
-  #userWrap{padding: 80px 0;}
   #userWrap .titleBox{margin-bottom: 30px;}
   #userWrap .list li .text01{font-size: 14px;}
   #userWrap .list li strong .text02,
@@ -377,7 +376,6 @@ background: rgba(255,255,255,0.2); backdrop-filter: blur(8px); -webkit-backdrop-
   #userWrap .list li .infoBox span,
   #userWrap .list li .infoBox em{font-size: 14px;}
   #userWrap .list li .infoBox{height: 40px; gap: 0 10px;}
-
 
   #userWrap .list li:nth-child(1):before{width: 80px; height: 80px;}
   #userWrap .list li:nth-child(2):before{width: 80px; height: 60px;}
@@ -408,14 +406,14 @@ background: rgba(255,255,255,0.2); backdrop-filter: blur(8px); -webkit-backdrop-
 
 @media (max-width: 1199px){
 
-#reviewVideoWrap .control{display: none;}
-#reviewVideoWrap .reviewVideoList .box p{font-size: 18px;}
+  #reviewVideoWrap{padding: 100px 0;}
+  #reviewVideoWrap .control{display: none;}
+  #reviewVideoWrap .reviewVideoList .box p{font-size: 18px;}
 
 }
 
 @media (max-width: 1024px){
 
-  #reviewVideoWrap{padding: 100px 0;}
   #reviewVideoWrap .titleBox{margin-bottom: 80px;}
   #reviewVideoWrap .slick-dots{display: none!important;}
   #reviewVideoWrap .slick-dots li button{width: 18px;}
@@ -426,7 +424,7 @@ background: rgba(255,255,255,0.2); backdrop-filter: blur(8px); -webkit-backdrop-
 
 @media (max-width: 767px){
 
-  #reviewVideoWrap{padding: 100px 0 70px;}
+  #reviewVideoWrap{padding: 60px 0 90px;}
   #reviewVideoWrap .reviewVideoList .box{width: 332px; margin: 0 10px;}
   #reviewVideoWrap .reviewVideoList .box p{font-size: 16px;}
   #reviewVideoWrap .slick-list{margin: 0;}
@@ -435,7 +433,7 @@ background: rgba(255,255,255,0.2); backdrop-filter: blur(8px); -webkit-backdrop-
 
 @media (max-width: 480px){
 
-  #reviewVideoWrap{padding: 80px 0 70px;}
+  #reviewVideoWrap{padding: 20px 0 90px;}
   #reviewVideoWrap .titleBox{margin-bottom: 60px;}
   #reviewVideoWrap .reviewVideoList .box{width: 250px; margin: 0 10px;}
 
