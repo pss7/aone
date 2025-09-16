@@ -345,14 +345,21 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 .productBox .top .title{font-size: 36px; font-weight: 700; color: #fff; line-height: 1.4;}
 .productBox .productList{margin-bottom: 60px; display: flex; flex-wrap: wrap; gap: 32px 2.8%;}
 .productBox .productList li{width: 48.6%;}
-.productBox .productList li a{display: block; position: relative; border: 1px solid #DDDDDD; border-radius: 20px; overflow: hidden;}
+.productBox .productList li a{position: relative; display: block; position: relative; border: 1px solid #DDDDDD; border-radius: 20px; overflow: hidden;}
+.productBox .productList li a::after{content: ''; position: absolute; top:0; left:0; right:0; height: 7px; background-color: #5D8EFF;}
 .productBox .productList li a:hover{border: 1px solid #5D8EFF;}
 .productBox .productList li a .badge{position: absolute; top:0; right:0;}
-.productBox .productList li .textBox{min-height: 287px; padding: 48px 20px 40px 48px;}
-.productBox .productList li .textBox .infoBox{margin-bottom: 10px; display: flex; gap: 0 15px;}
-.productBox .productList li .textBox .infoBox span{padding: 4px 11px; border-radius: 8px; font-weight: 500;}
-.productBox .productList li .textBox .infoBox span.best{background-color: #E9F0FF; color: #5D8EFF;}
-.productBox .productList li .textBox .infoBox span.new{background-color: #EBFAF9; color: #39B9B3;}
+.productBox .productList li .textBox{padding: 36px 20px 36px 48px;}
+.productBox .productList li .textBox .infoBox{margin-bottom: 20px; display: flex; gap: 0 15px;}
+.productBox .productList li .textBox .infoBox span{padding: 4px 11px; border-radius: 8px; font-weight: 600;}
+.productBox .productList li .textBox .infoBox span.info01{background-color: #E9F0FF; color: #5D8EFF;}
+.productBox .productList li .textBox .infoBox span.info02{background-color: #EBFAF9; color: #39B9B3;}
+.productBox .productList li .textBox .infoBox span.info03{background-color: #E9F0FF; color: #5D8EFF;}
+
+
+
+
+
 .productBox .productList li.deadlineBox a,
 .productBox .productList li.deadlineBox .infoListBox{opacity: .5;}
 .productBox .productList li.deadlineBox a{background-color: #ddd; pointer-events: none !important;}
@@ -360,8 +367,9 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 .productBox .productList li.deadlineBox .textBox h4,
 .productBox .productList li.deadlineBox .textBox p,
 .productBox .productList li.deadlineBox .textBox p strong{color: #a5a5a5;}
-.productBox .productList li .textBox h4{margin-bottom: 13px; font-size: 36px; color: #333D4B; font-weight: 700; }
-.productBox .productList li .textBox p{font-size: 24px; font-weight: 700; color: #12124F;}
+.productBox .productList li .textBox h4{margin-bottom: 13px; font-size: 36px; color: #333D4B; font-weight: 700; line-height: 1.3;}
+.productBox .productList li .textBox h4 span{display: block; font-size: 26px;color: #5D8EFF;}
+.productBox .productList li .textBox p{font-size: 24px; font-weight: 700; color: #12124F; word-break: keep-all;}
 .productBox .productList li .textBox p strong{color: #5D8EFF;}
 .productBox .productList li .infoListBox{display: flex; flex-wrap: wrap; gap: 30px 0; padding: 42px 20px; background-color: #FBFBFB; text-align: center;}
 .productBox .productList li .infoListBox .box{width: 33.33%;}
