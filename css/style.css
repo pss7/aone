@@ -8,7 +8,7 @@
 .white-color{color: #fff!important;}
 
 /* 공통 - 더보기 */
-.view{display: block; height: 78px; line-height: 78px; font-size: 25px; border-radius: 16px; background: linear-gradient(to right, #905DFF, #5E79FF); text-align: center; font-weight: 700; color: #fff; transition: all .3s;}
+.view{display: block; height: 78px; line-height: 78px; font-size: 25px; border-radius: 16px; background: #5D8EFF; text-align: center; font-weight: 700; color: #fff; transition: all .3s;}
 .viewStyle02{height: 65px!important; line-height: 65px!important; font-size: 18px!important;}
 
 @media (max-width: 1199px){
