@@ -279,6 +279,11 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 }
 
 /* 이벤트 */
+.eventBox{padding-top: 170px;}
+.eventBox .titleBox{margin-bottom: 65px;}
+.eventBox .titleBox .title{font-size: 24px;}
+.eventBox .titleBox .title span{margin-bottom: 10px; font-size: 34px;}
+.eventBox .titleBox .title strong{color: #5D8EFF;}
 .eventBox .event_List{display: flex; flex-wrap: wrap; gap: 72px 2.67%;}
 .eventBox .event_List li{width: 31.55%;}
 .eventBox .event_List li a{display: block;}
@@ -286,6 +291,14 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 .eventBox .event_List li a .imgBox img{position: absolute; top:0; left:0; right:0; bottom: 0; width: 100%; height: 100%; object-fit: cover;}
 .eventBox .event_List li a .textBox h3{margin-bottom: 6px; font-size: 20px; font-weight: 700; color: #000; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 .eventBox .event_List li a .textBox .date{font-size: 18px; font-weight: 600; color: #A6A6A6;}
+
+@media (max-width: 1199px){
+
+  .eventBox{padding-top: 100px;}
+  .eventBox .titleBox .title span{font-size: 30px;}
+  .eventBox .titleBox{margin-bottom: 60px;}
+
+}
 
 @media (max-width: 1024px){
 
@@ -298,6 +311,10 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 
   .eventBox .event_List{gap: 60px 3%}
   .eventBox .event_List li{width: 48.5%;}
+  .eventBox{padding-top: 80px;}
+  .eventBox .titleBox{margin-bottom: 50px;}
+  .eventBox .titleBox .title{font-size: 20px;}
+  .eventBox .titleBox .title span{font-size: 26px;}
 
 }
 
@@ -305,6 +322,12 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 
   .eventBox .event_List{gap: 60px 0}
   .eventBox .event_List li{width: 100%;}
+
+  .eventBox{padding-top: 70px;}
+  .eventBox .titleBox{margin-bottom: 45px;}
+  .eventBox .titleBox .title{font-size: 18px;}
+  .eventBox .titleBox .title span{margin-bottom: 5px; font-size: 24px;}
+
 
 }
 
