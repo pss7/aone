@@ -39,7 +39,7 @@ $(function () {
     slidesToScroll: 1,
     zIndex: 1000,
     pauseOnHover: false,
-    autoplaySpeed: 7500,
+    autoplaySpeed: 8000,
     speed: 2000,
     prevArrow: $('#mainTitleWrap .controlBox .prev'),
     nextArrow: $('#mainTitleWrap .controlBox .next'),
