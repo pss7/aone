@@ -342,8 +342,8 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 .productBox .productList li .textBox h4{margin-bottom: 13px; font-size: 36px; color: #000; font-weight: 700; }
 .productBox .productList li .textBox p{font-size: 24px; font-weight: 700; color: #12124F;}
 .productBox .productList li .textBox p strong{color: #5D8EFF;}
-.productBox .productList li .infoListBox{display: flex; flex-wrap: wrap; gap: 30px 0; padding: 42px 20px 46px 48px; background-color: #FBFBFB; text-align: center;}
-.productBox .productList li .infoListBox .box{width: 50%;}
+.productBox .productList li .infoListBox{display: flex; flex-wrap: wrap; gap: 30px 0; padding: 42px 20px; background-color: #FBFBFB; text-align: center;}
+.productBox .productList li .infoListBox .box{width: 33.33%;}
 .productBox .productList li .infoListBox .box span{display: block; margin-bottom: 5px; font-weight: 700; color: #9E9E9E;}
 .productBox .productList li .infoListBox .box strong{font-size: 24px; font-weight: 700; color: #12124F;}
 .infoTextBox{margin-bottom: 32px; padding: 30px 20px 30px 38px; border-radius: 20px; background-color: #F9FAFB;}
@@ -352,11 +352,12 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 .infoTextBox .box:last-child{margin-bottom: 0;}
 .infoTextBox .box span{display: block; margin-bottom: 5px; font-size: 20px; font-weight: 700; color: #000;}
 .infoTextBox .box em{display: block; font-size: 18px; color: #9E9E9E; font-weight: 600;}
-
-
-.productBox .productList li .percentBox{}
-
-
+.productBox .productList li .percentBox{padding: 0 20px 30px; background-color: #FBFBFB;}
+.productBox .productList li .percentBox .topTextBox{margin-bottom: 15px; display: flex; justify-content: space-between;}
+.productBox .productList li .percentBox .topTextBox em{font-weight: 700; color: #5D8EFF;}
+.productBox .productList li .percentBox .topTextBox span{display: block; font-weight: 700; color: #9E9E9E; }
+.productBox .productList li .percentBox .percent{width: 100%; height: 18px; background-color: #efefef; border-radius: 10px; overflow: hidden;}
+.productBox .productList li .percentBox .percent em{padding-right: 20px; justify-content: flex-end; display: flex; align-items: center; height: 100%; background-color: #5D8EFF; border-radius: 10px; color: #fff; font-size: 14px;} 
 
 
 @media (max-width: 1024px){
@@ -397,11 +398,13 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
   .productBox .productList li .infoListBox .box span{margin-bottom: 5px;}
 
   .productBox .productList{margin-bottom: 40px;}
+
   .infoTextBox h4{font-size: 24px;}
   .infoTextBox .box span{font-size: 16px;}
   .infoTextBox .box em{font-size: 14px;}
   .infoTextBox .box{margin-bottom: 20px;}
   .infoTextBox{padding: 25px 30px;}
+  
 
 }
 
@@ -422,6 +425,12 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
   .productBox .productList li a .badge{width: 90px;}
 
   .productBox .productList{margin-bottom: 30px;}
+  .productBox .productList li .percentBox .percent{height: 15px;}
+  .productBox .productList li .percentBox .percent em{font-size: 12px;}
+  .productBox .productList li .percentBox .topTextBox span,
+  .productBox .productList li .percentBox .topTextBox em{font-size: 14px;}
+  .productBox .productList li .percentBox .topTextBox{margin-bottom: 10px;}
+  
   .infoTextBox h4{font-size: 20px;}
   .infoTextBox .box{margin-bottom: 15px;}
   .infoTextBox{padding: 25px 20px;}
@@ -437,6 +446,11 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 
   .productBox .productList{gap: 20px 0;}
   .productBox .productList li a .badge{width: 70px;}
+
+  .productBox .productList li .infoListBox{flex-direction: column; align-items: center;}
+  .productBox .productList li .infoListBox .box{position: relative; width: 100%;}
+  .productBox .productList li .infoListBox .box::after{content: ''; position: absolute; left: 50%; margin-left: -5px; bottom: -15px; width: 10px; height: 1px; background-color: #12124F;}
+  .productBox .productList li .infoListBox .box:last-child:after{display: none;}
 
 }
 

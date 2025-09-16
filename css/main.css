@@ -630,6 +630,7 @@
   #questionWrap .questionList li a{gap: 0 15px;}
   #questionWrap .questionList li a p{font-size: 18px;}
   #questionWrap .contentBox p{font-size: 16px;}
+  #questionWrap .questionList li a span{width: 28px; font-size: 18px;}
 
 }
 
@@ -639,13 +640,13 @@
   #questionWrap h3{font-size: 22px;}
   #questionWrap .questionListBox{padding-top: 22px;}
   #questionWrap .questionList li a{padding: 15px 30px 15px 0;}
-  #questionWrap .questionList li a span{display: none;}
   #questionWrap .contentBox p,
   #questionWrap .questionList li a p{font-size: 14px;}
   #questionWrap .contentBox{padding: 0;}
   #questionWrap .more{font-size: 14px;}
   #questionWrap .contentBox p::before,
   #questionWrap .questionList li a p::before{width: 30px; height: 30px;}
+  #questionWrap .questionList li a span{width: 15px; font-size: 16px;}
 
 }
 
