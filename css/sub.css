@@ -353,6 +353,12 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 .infoTextBox .box span{display: block; margin-bottom: 5px; font-size: 20px; font-weight: 700; color: #000;}
 .infoTextBox .box em{display: block; font-size: 18px; color: #9E9E9E; font-weight: 600;}
 
+
+.productBox .productList li .percentBox{}
+
+
+
+
 @media (max-width: 1024px){
 
   .productBox .productList li a .badge{width: 90px;}
