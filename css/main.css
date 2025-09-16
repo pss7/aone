@@ -172,9 +172,11 @@
 #productWrap01 .textBox .text02{margin-bottom: 74px; font-size: 20px; font-weight: 600; color: #333D4B; text-align: center;}
 #productWrap01 .linkBox{display: flex; gap: 0 33px;}
 #productWrap01 .linkBox .link{flex: 1; height: 78px; line-height: 78px; border-radius: 25px; font-size: 25px; color: #333D4B; font-weight: 700; text-align: center; transition: all .3s;}
-#productWrap01 .linkBox .link:hover{background-color: #5D8EFF; color: #fff;}
+
 #productWrap01 .linkBox .view01{border: 2px solid #E9F0FF;} 
-#productWrap01 .linkBox .view02{background-color: #E9F0FF; color: #5D8EFF;} 
+#productWrap01 .linkBox .view02{background-color: #5D8EFF; color: #fff;} 
+#productWrap01 .linkBox .view01:hover{color: #5D8EFF;}
+#productWrap01 .linkBox .view02:hover{background-color: #547edf;}
 
 @media (max-width: 1199px){
 
