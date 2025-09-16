@@ -87,11 +87,10 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 #headerWrap{box-shadow: 0 10px 10px rgba(0, 0, 0, .05)!important;}
 #headerWrap .menuBox .menuList02,
 #headerWrap{background-color: rgba(255,255,255,.6);}
-#headerWrap .loginBox .signin{background-color: #F8F8F8;}
-#headerWrap .loginBox .signin,
 #headerWrap .menuBox .menuList02 li h3 a,
 #headerWrap .menuBox .menuList li h2 a{color: #333D4B;}
 #headerWrap .menuBox .menuList li h2.active a::after{border-color: #333D4B;}
+#headerWrap .loginBox a{color: #333D4B;}
 
 /* 공통 - 버튼 */
 .button{padding: 0 40px; height: 78px; line-height: 78px; color: #fff; background: linear-gradient(to right, #905DFF, #5E79FF); text-align: center; border-radius: 50px; font-size: 25px; font-weight: 700;}
