@@ -123,29 +123,29 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 .formBox{margin-bottom: 25px;}
 .formBox span{display: block; margin-bottom: 7px; font-weight: 500; font-size: 18px; color: #333D4B;}
 .inputLayoutBox{display: flex; gap: 0 15px;}
-.inputTextBox input{padding:0 20px 0 16px; width: 100%; height: 60px; border: 1px solid #F8F8F8; font-size: 18px; font-weight: 500; border-radius: 13px; color: #333D4B; background-color: #fff;}
+.inputTextBox input{padding:0 20px 0 16px; width: 100%; height: 60px; border: 1px solid #ddd; font-size: 18px; font-weight: 500; border-radius: 13px; color: #333D4B; background-color: #fff;}
 .textAreaBox textarea:focus,
 .selectBox .selectBtn:focus,
 .inputTextBox input:focus{outline: 0; border: 1px solid #5D8EFF!important;}
 .inputTextBox input::placeholder{color: #D0D0D0;}
 
 .selectBox{position: relative;}
-.selectBox .selectBtn{position: relative; padding:0 20px 0 16px; width: 100%; height: 60px; border: 1px solid #F8F8F8; font-size: 18px; font-weight: 500; border-radius: 13px; color: #D0D0D0; text-align: left; background-color: #fff;}
+.selectBox .selectBtn{position: relative; padding:0 20px 0 16px; width: 100%; height: 60px; border: 1px solid #ddd; font-size: 18px; font-weight: 500; border-radius: 13px; color: #D0D0D0; text-align: left; background-color: #fff;}
 .selectBox .selectBtn::after{content: ''; width: 14px; height: 9px; position: absolute; top: 50%; transform: translateY(-50%); right:20px; background: url(../images/sub/arrow_icon01.svg)no-repeat center; transition: all .3s;}
 .selectBox .selectBtn.active::after{transform: translateY(-50%) rotate(-180deg);}
-.selectBox .selectList{display: none; padding: 20px 15px; position: absolute; top:63px; left:0; right:0; border: 1px solid #E3E3E3; background-color: #fff; border-radius: 16px; z-index: 9999;}
+.selectBox .selectList{display: none; padding: 20px 15px; position: absolute; top:63px; left:0; right:0; border: 1px solid #ddd; background-color: #fff; border-radius: 16px; z-index: 9999;}
 .selectBox .selectList li{margin-bottom: 15px;}
 .selectBox .selectList li:last-child{margin-bottom: 0;}
 .selectBox .selectList li .btn{display: block; padding: 0 10px 0 15px;  width: 100%; height: 43px; text-align: left; font-size: 18px; font-weight: 500; color: #333D4B; border-radius: 8px; transition: all .3s;}
 .selectBox .selectList li .btn:hover{background-color: #FFF7E5;}
 
-.inputChkWrap{margin-bottom: 15px; padding: 16px; border-radius: 13px; border: 1px solid #F8F8F8; background-color: #fff;}
+.inputChkWrap{margin-bottom: 15px; padding: 16px; border-radius: 13px; border: 1px solid #ddd; background-color: #fff;}
 .inputChkWrap .inputChkBox{width: 100%; display: flex; align-items: center; justify-content: space-between; }
 .inputChkWrap:last-child{margin-bottom: 0;}
 .inputChkWrap .agreeView{font-weight: 500; color: #B3B3B3; line-height: 1;}
 .inputChkWrap p{margin-top: 16px; font-weight: 500; color: #B3B3B3;}
 .inputChkBox label{flex-wrap: wrap; display: flex; align-items: center; gap: 5px 8px; font-weight: 500; color: #333D4B; font-size: 16px; cursor: pointer;}
-.inputChkBox label::before{content: ''; width: 24px; height: 24px; border: 1px solid #E3E3E3; border-radius: 6px; background-color: #fff;}
+.inputChkBox label::before{content: ''; width: 24px; height: 24px; border: 1px solid #ddd; border-radius: 6px; background-color: #fff;}
 .inputChkBox input:checked + label::before{content: '\2713'; width: 26px; height: 26px; background: #5D8EFF; border: 0; color: #fff; text-align: center; line-height: 26px; font-size: 20px;}
 .inputChkBox label em{font-weight: 500; color: #D0D0D0; font-size: 16px;}
 
@@ -233,14 +233,13 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 }
 
 /* 로그인 */
-#subWrap .loginBox{position: relative; margin-bottom: -150px; padding: 200px 0 109px; background:#020203 url(../images/sub/bg01.jpg)no-repeat center top; background-size: cover; z-index: 9;}
+#subWrap .loginBox{position: relative; margin-bottom: -150px; padding: 200px 0 109px; }
 .loginBox .container{max-width: 600px;}
-.loginBox .titleBox .title{color: #fff;}
+
 .loginBox .titleBox{margin-bottom: 60px;}
-.loginBox .loginBtn{display: block; width: 100%; margin-bottom: 25px; height: 60px; color: #fff; border-radius:50px; text-align: center; font-size: 20px; font-weight: 600;}
-.loginBox .infoText{text-align: center; color: #fff; font-weight: 500;}
-.loginBox .infoText a{color: #fff; text-decoration: underline;}
-.loginBox .formBox span{color: #fff;}
+.loginBox .loginBtn{display: block; width: 100%; margin-bottom: 25px; height: 60px; border-radius:15px; text-align: center; font-size: 20px; font-weight: 700;     background-color: #E9F0FF; color: #5D8EFF;}
+.loginBox .infoText{text-align: center;  font-weight: 500;}
+.loginBox .infoText a{ text-decoration: underline;}
 
 @media (max-width: 1199px){
 
@@ -1230,7 +1229,7 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 .questionBox .title{margin-bottom: 60px; text-align: center; font-size: 45px; font-weight: 700;}
 .questionBox .inputSearchBox{position: relative; max-width: 600px; margin: 0 auto 20px; }
 .questionBox .inputSearchBox .inputTextBox input{height: 80px; border: 1px solid #E7E6E6; padding:0 90px 0 48px; border-radius: 50px; }
-.questionBox .inputSearchBox .btn{position: absolute; top: 50%; transform: translateY(-50%); right:15px; width: 48px; height: 48px; background: #5E79FF url(../images/sub/search_icon.svg)no-repeat center; border-radius: 50%;}
+.questionBox .inputSearchBox .btn{position: absolute; top: 50%; transform: translateY(-50%); right:15px; width: 48px; height: 48px; background: #46518a url(../images/sub/search_icon.svg)no-repeat center; border-radius: 50%;}
 .questionBox .keywordListBox{text-align: center;}
 .questionBox .keywordList{margin-bottom: 100px; display: inline-flex; flex-wrap: wrap; align-items: center; gap: 8px 15px; }
 .questionBox .keywordList li{display: flex; align-items: center; justify-content: center; padding: 0 15px; height: 37px; border-radius: 50px; background-color: #F4F4F4; border: 1px solid #F1F1F1; text-align: center;
