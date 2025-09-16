@@ -3,8 +3,6 @@ $(function () {
 
   //aos 초기화
   $(window).load(function () {
-    $("#mainTitleWrap").addClass("active");
-    $("#mainTitleWrap .mainTitle").addClass("active");
     AOS.init({
       duration: 2000
     });
@@ -12,10 +10,12 @@ $(function () {
 
   //메인
   $('#mainTitleWrap .slick').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+    $('#mainTitleWrap').removeClass('active');
     $('#mainTitleWrap .mainTitle').removeClass('active');
     $('#mainTitleWrap .progressbarBox .dots').removeClass('active');
   });
   $('#mainTitleWrap .slick').on('afterChange', function (event, slick, currentSlide, nextSlide) {
+    $('#mainTitleWrap').addClass('active');
     $('#mainTitleWrap .mainTitle').addClass('active');
     $('#mainTitleWrap .progressbarBox .dots').addClass('active');
   });
@@ -23,6 +23,8 @@ $(function () {
   $('#mainTitleWrap .slick').on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
     var i = (currentSlide ? currentSlide : 0) + 1;
     $('#mainTitleWrap .progressbarBox .count').html('<em class="current">' + i + '</em> <em class="total">' + slick.slideCount + '</em>');
+    $("#mainTitleWrap").addClass("active");
+    $("#mainTitleWrap .mainTitle").addClass("active");
     $('#mainTitleWrap .progressbarBox .dots').addClass('active');
   });
 
@@ -37,7 +39,7 @@ $(function () {
     slidesToScroll: 1,
     zIndex: 1000,
     pauseOnHover: false,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 7500,
     speed: 2000,
     prevArrow: $('#mainTitleWrap .controlBox .prev'),
     nextArrow: $('#mainTitleWrap .controlBox .next'),

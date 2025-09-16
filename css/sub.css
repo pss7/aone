@@ -385,6 +385,11 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 .productBox .productList li .percentBox .percent em{padding-right: 20px; justify-content: flex-end; display: flex; align-items: center; height: 100%; background-color: #5D8EFF; border-radius: 10px; color: #fff; font-size: 14px;} 
 
 
+
+
+
+
+
 @media (max-width: 1199px){
 
   .productBox{padding-top: 0;}
