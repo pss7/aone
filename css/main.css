@@ -1,56 +1,47 @@
 @charset "UTF-8";
 
 /* 메인 제목 영역 */
-#mainTitleWrap{position: relative; z-index: 9; overflow: hidden;}
-#mainTitleWrap .mainTitleBox{padding-top: 200px; height: 824px;}
-#mainTitleWrap::after{content: ''; position: absolute; top:0; left:0; right:0; bottom: 0; background: url(../images/main/main_bg.jpg)no-repeat center; background-size: cover; z-index: -1; transform: scale(1.7); transition: all 7.5s;}
-#mainTitleWrap.active::after{transform: scale(1);}
+#mainTitleWrap{position: relative;}
+#mainTitleWrap .slick-slide{position: relative; height: 100vh;}
+#mainTitleWrap{ position: relative; z-index: 9; overflow: hidden;}
+#mainTitleWrap .mainTitleBox{position: relative; padding-top: 180px; }
+#mainTitleWrap .mainImgBox{position: absolute; top:0; left:0; right:0; bottom: 0; overflow: hidden;}
+#mainTitleWrap .mainImgBox img{display: block; width: 100%; height: 100%; object-fit: cover; transform: scale(2);} 
+#mainTitleWrap.active .mainImgBox img{transform: scale(1); transition: all 6.5s;}
 #mainTitleWrap .mainTitle{margin-bottom: 60px;}
-#mainTitleWrap .mainTitle h2{margin-bottom: 26px; text-align: center; font-size: 40px; color: #fff;}
-/* #mainTitleWrap .mainTitle h2 em:nth-child(1){animation-delay: .3s;}
-#mainTitleWrap .mainTitle h2 em:nth-child(2){animation-delay: .33s;}
-#mainTitleWrap .mainTitle h2 em:nth-child(3){animation-delay: .36s;}
-#mainTitleWrap .mainTitle h2 em:nth-child(4){animation-delay: .39s;}
-#mainTitleWrap .mainTitle h2 em:nth-child(5){animation-delay: .42s;}
-#mainTitleWrap .mainTitle h2 em:nth-child(6){animation-delay: .45s;}
-#mainTitleWrap .mainTitle h2 em:nth-child(7){animation-delay: .48s;}
-#mainTitleWrap .mainTitle h2 em:nth-child(8){animation-delay: .51s;}
-#mainTitleWrap .mainTitle h2 em:nth-child(9){animation-delay: .54s;}
-#mainTitleWrap .mainTitle h2 em:nth-child(10){animation-delay: .57s;}
-#mainTitleWrap .mainTitle h2 em:nth-child(11){animation-delay: .60s;}
-#mainTitleWrap .mainTitle h2 em:nth-child(12){animation-delay: .63s;}
-#mainTitleWrap .mainTitle h2 em:nth-child(13){animation-delay: .66s;}
-#mainTitleWrap .mainTitle h2 em:nth-child(14){animation-delay: .69s;}
-#mainTitleWrap .mainTitle h2 em:nth-child(15){animation-delay: .72s;}
-#mainTitleWrap .mainTitle h2 em:nth-child(16){animation-delay: .75s;} */
-
-/* @keyframes textEffect {
-  
-  0%{
-    opacity: 0;
-    transform: translateY(70px);
-  }
-
-  100%{
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-} */
-
-#mainTitleWrap .mainTitle p{text-align: center; color: #fff; font-weight: 600; font-size: 20px; animation: textEffect 1.7s .7s both;}
-#mainTitleWrap .mainInfoBox{position: relative; padding: 35px 50px 50px; background-color: rgba(255, 255, 255, 0.2); border-radius: 25px; border: 1px solid #B0B4C9;
-background: rgba(255,255,255,0.2); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-radius: 16px;} 
-#mainTitleWrap .mainInfoBox .topTextBox{margin-bottom: 79px;}
+#mainTitleWrap .mainTitle h2{ opacity: 0; transform: translateY(50px);  margin-bottom: 10px; text-align: center; font-size: 40px; color: #fff; line-height: 1.3; text-shadow: 0 6px 10px rgba(0,0,0,25%); }
+#mainTitleWrap .mainTitle p{opacity: 0; transform: translateY(50px); text-align: center; color: #fff; font-weight: 600; font-size: 20px; }
+#mainTitleWrap .mainTitle.active h2,
+#mainTitleWrap .mainTitle.active p{opacity: 1; transform: translateY(0); transition: all 1.5s;}
+#mainTitleWrap .mainTitle.active p{transition-delay: .3s;}
+#mainTitleWrap .progressbarBox{display: flex; align-items: center; position: absolute; left: 50%; transform: translateX(-50%); bottom: 36px;}
+#mainTitleWrap .progressbarBox .count{display: flex; align-items: center; justify-content: space-between; position: absolute; left:-20px; right: -20px;}
+#mainTitleWrap .progressbarBox .count em{line-height: 1; font-size: 18px; font-weight: 600;}
+#mainTitleWrap .progressbarBox .count em.current{color: #fff;}
+#mainTitleWrap .progressbarBox .count em.total{color: rgba(255,255,255,.7);}
+#mainTitleWrap .progressbarBox .dots{position: relative; overflow: hidden; height: 2px; width: 207px;}
+#mainTitleWrap .progressbarBox .dots:before{content:'';display:block; height:100%; position:absolute; top: 50%; transform: translateY(-50%); left:0;right:0; background-color: rgba(255,255,255,26%);}
+#mainTitleWrap .progressbarBox .dots:after{content:'';display:block; height:100%; background:#fff;position:absolute;  top: 50%; transform: translateY(-50%); left:0;width:0%;}
+#mainTitleWrap .progressbarBox .dots.active:after{width:100%;transition:all 5s linear;}
+#mainTitleWrap .mainInfoBox{position: relative; padding: 35px 50px 50px; background-color: rgba(0, 0, 0, 0.2); border-radius: 16px;backdrop-filter: blur(5px);} 
+#mainTitleWrap .mainInfoBox .topTextBox{margin-bottom: 77px;}
 #mainTitleWrap .mainInfoBox .topTextBox h3{margin-bottom: 7px; color: #fff; font-size: 35px; font-weight: 600; color: #fff;}
 #mainTitleWrap .mainInfoBox .topTextBox span{display: block; font-size: 17px; font-weight: 600; color: #C3C3C3;}
 #mainTitleWrap .mainInfoBox .infoList{position: relative; display: flex; justify-content: flex-end; gap: 0 50px;}
-#mainTitleWrap .mainInfoBox .infoList li strong{display: block; color: #fff; font-size: 60px; font-weight: 600;}
+#mainTitleWrap .mainInfoBox .infoList li strong{position: relative; padding-left: 50px; display: block; color: #fff; font-size: 60px; font-weight: 600;}
+#mainTitleWrap .mainInfoBox .infoList li strong::before{content: ''; position: absolute; top:27px; left:0;}
+#mainTitleWrap .mainInfoBox .infoList li:nth-child(1) strong{padding-left: 70px;}
+#mainTitleWrap .mainInfoBox .infoList li:nth-child(1) strong::before{width: 51px; height: 30px; background: url(../images/main/main_icon01.svg)no-repeat center; background-size: contain!important;}
+#mainTitleWrap .mainInfoBox .infoList li:nth-child(2) strong::before{width: 31px; height: 34px; background: url(../images/main/main_icon02.svg)no-repeat center; background-size: contain!important;}
+#mainTitleWrap .mainInfoBox .infoList li:nth-child(3) strong::before{width: 31px; height: 34px; background: url(../images/main/main_icon03.svg)no-repeat center; background-size: contain!important;}
 #mainTitleWrap .mainInfoBox .infoList li span{display: block; font-size: 20px; font-weight: 700; color: #fff; text-align: center;}
-#mainTitleWrap .mainInfoBox::after{content: ''; width: 161px; height: 142px; position: absolute; top:21px; right:29px; background: url(../images/main/main_icon01.svg)no-repeat center; background-size: contain;}
+#mainTitleWrap .controlBox button{width: 52px; height: 15px; position: absolute; top: 50%; transform: translateY(-50%);}
+#mainTitleWrap .controlBox button.prev{left:50px; background: url(../images/main/prev_icon.svg)no-repeat center;}
+#mainTitleWrap .controlBox button.next{right:50px; background: url(../images/main/next_icon.svg)no-repeat center;}
 
 @media (max-width: 1199px){
 
+  #mainTitleWrap .controlBox{display: none;}
   #mainTitleWrap .mainTitleBox{padding: 180px 0 0; height: 100vh;}
   #mainTitleWrap .mainTitle h2{font-size: 32px;}
   #mainTitleWrap .mainTitle p{font-size: 18px;}
@@ -58,45 +49,66 @@ background: rgba(255,255,255,0.2); backdrop-filter: blur(8px); -webkit-backdrop-
   #mainTitleWrap .mainInfoBox .topTextBox span{font-size: 16px;}
   #mainTitleWrap .mainInfoBox .infoList li strong{font-size: 45px;}
   #mainTitleWrap .mainInfoBox .infoList li span{font-size: 18px;}
+  #mainTitleWrap .mainInfoBox .infoList li strong::before{top: 17px;}
+
+}
+
+@media (max-width:1024px){
+
+  #mainTitleWrap .mainInfoBox .infoList li strong{padding-left: 35px; font-size: 36px;}
+  #mainTitleWrap .mainInfoBox .infoList li strong::before{top:15px;}
+  #mainTitleWrap .mainInfoBox .infoList li:nth-child(1) strong{padding-left: 49px;}
+  #mainTitleWrap .mainInfoBox .infoList li:nth-child(1) strong::before{width: 41px; height: 20px;}
+  #mainTitleWrap .mainInfoBox .infoList li:nth-child(2) strong::before{width: 21px; height: 24px;}
+  #mainTitleWrap .mainInfoBox .infoList li:nth-child(3) strong::before{width: 21px; height: 24px;}
 
 }
 
 @media (max-width: 767px){
 
   #mainTitleWrap .mainTitleBox{padding: 150px 0 0;}
+  #mainTitleWrap .mainTitle{margin-bottom: 30px;}
   #mainTitleWrap .mainTitle h2{font-size: 26px;}
   #mainTitleWrap .mainTitle p{font-size: 16px;}
   #mainTitleWrap .mainInfoBox{ padding: 35px;}
-  #mainTitleWrap .mainInfoBox .topTextBox{margin-bottom: 55px;}
+  #mainTitleWrap .mainInfoBox .topTextBox{margin-bottom: 40px;}
   #mainTitleWrap .mainInfoBox .topTextBox h3{font-size: 22px;}
-  #mainTitleWrap .mainInfoBox .infoList{flex-direction: column; gap: 25px 0;}
+  #mainTitleWrap .mainInfoBox .infoList{flex-direction: column; align-items: center; gap: 25px 0;}
   #mainTitleWrap .mainInfoBox .infoList li{text-align: center;}
-  #mainTitleWrap .mainInfoBox .infoList li strong{font-size: 30px;}
+  #mainTitleWrap .mainInfoBox .infoList li strong{padding-left: 30px; font-size: 30px;}
+  #mainTitleWrap .mainInfoBox .infoList li strong::before{top: 10px;}
   #mainTitleWrap .mainInfoBox .infoList li span{font-size: 16px;}
   #mainTitleWrap .mainInfoBox::after{right:0; width: 140px; height: 120px;}
+
+  #mainTitleWrap .progressbarBox .count em{font-size: 16px;}
+
 
 }
 
 @media (max-width: 480px){
 
-  #mainTitleWrap .mainTitleBox{padding: 200px 0 0;}
   #mainTitleWrap .mainTitle h2{margin-bottom: 20px; font-size: 22px;}
   #mainTitleWrap .mainTitle p{font-size: 14px;}
-  #mainTitleWrap .mainInfoBox{ padding: 30px 30px 30px 20px;}
+  #mainTitleWrap .mainInfoBox{ padding: 30px 20px 40px;}
   #mainTitleWrap .mainInfoBox .topTextBox{margin-bottom: 35px;}
   #mainTitleWrap .mainInfoBox .topTextBox span{font-size: 14px;}
   #mainTitleWrap .mainInfoBox .topTextBox h3{margin-bottom: 3px; font-size: 16px;}
-  #mainTitleWrap .mainInfoBox .infoList li strong{font-size: 18px;}
+  #mainTitleWrap .mainInfoBox .infoList li strong{padding-left: 28px; font-size: 18px;}
   #mainTitleWrap .mainInfoBox .infoList li span{font-size: 14px;}
   #mainTitleWrap .mainInfoBox::after{width: 100px; height: 80px;}
+  #mainTitleWrap .progressbarBox .count em{font-size: 14px;}
+  #mainTitleWrap .progressbarBox .dots{width: 140px;}
+
+  #mainTitleWrap .mainInfoBox .infoList{gap: 35px 0;}
+  #mainTitleWrap .mainInfoBox .infoList li strong{padding: 30px 0 0!important;}
+  #mainTitleWrap .mainInfoBox .infoList li strong::before{ top:0; left: 50%; transform: translateX(-50%);}
+
+  
+
+  
 
 }
 
-@media (max-width: 320px){
-
-  #mainTitleWrap .mainInfoBox::after{width: 80px; height: 60px;}
-
-}
 
 /* 비디오 영역 */
 #videoWrap{position: relative; height: 0; padding-top: 35.5%; overflow: hidden;}
