@@ -351,11 +351,13 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 .productBox .productList li a:hover{border: 1px solid #5D8EFF;}
 .productBox .productList li a .badge{position: absolute; top:0; right:0;}
 .productBox .productList li .textBox{min-height: 272px; padding: 36px 20px 30px 48px;}
-.productBox .productList li .textBox .infoBox{margin-bottom: 20px; display: flex; gap: 0 15px;}
-.productBox .productList li .textBox .infoBox span{padding: 4px 11px; border-radius: 8px; font-weight: 600;}
-.productBox .productList li .textBox .infoBox span.info01{background-color: #E9F0FF; color: #5D8EFF;}
+.productBox .productList li .textBox .infoBox{margin-bottom: 20px; display: flex; gap: 0 10px;}
+.productBox .productList li .textBox .infoBox span{padding: 4px 11px; border-radius: 6px; font-weight: 600; background-color: #f0f0f0; color: #333D4B; font-size: 14px;}
+
+/* .productBox .productList li .textBox .infoBox span.info01{background-color: #E9F0FF; color: #5D8EFF;}
 .productBox .productList li .textBox .infoBox span.info02{background-color: #EBFAF9; color: #39B9B3;}
-.productBox .productList li .textBox .infoBox span.info03{background-color: #ece6ff; color: #a777e5;}
+.productBox .productList li .textBox .infoBox span.info03{background-color: #ece6ff; color: #a777e5;} */
+
 .productBox .productList li.deadlineBox a,
 .productBox .productList li.deadlineBox .infoListBox{opacity: .5;}
 .productBox .productList li.deadlineBox a{background-color: #ddd; pointer-events: none !important;}
