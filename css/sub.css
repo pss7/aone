@@ -389,8 +389,8 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 .productBox .productList li a .ribbon{Position: absolute; top: 18px; right: -54px; width: 170px;  height: 32px;  color: #fff; font-weight: 800; font-size: 14px; letter-spacing: .4px; text-align: center; line-height: 32px;
     transform: rotate(45deg); box-shadow: 0 2px 8px rgba(0, 0, 0, .2); z-index: 10; clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 50%, calc(100% - 18px) 100%, 0 100%);}
 
-.productBox .productList li a.new::after{background-color: #5D8EFF;}
-.productBox .productList li a.new .ribbon{background: #5D8EFF;}
+.productBox .productList li a.new::after{background-color: #0f4ad3;}
+.productBox .productList li a.new .ribbon{background: #0f4ad3;}
 .productBox .productList li a.best::after{background-color: #499d40;}
 .productBox .productList li a.best .ribbon{background-color: #499d40;}
 .productBox .productList li a.basic::after{background-color: #c72533; }
