@@ -349,17 +349,12 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 .productBox .productList li a::after{content: ''; position: absolute; top:0; left:0; right:0; height: 7px; background-color: #5D8EFF;}
 .productBox .productList li a:hover{border: 1px solid #5D8EFF;}
 .productBox .productList li a .badge{position: absolute; top:0; right:0;}
-.productBox .productList li .textBox{padding: 36px 20px 36px 48px;}
+.productBox .productList li .textBox{padding: 36px 20px 30px 48px;}
 .productBox .productList li .textBox .infoBox{margin-bottom: 20px; display: flex; gap: 0 15px;}
 .productBox .productList li .textBox .infoBox span{padding: 4px 11px; border-radius: 8px; font-weight: 600;}
 .productBox .productList li .textBox .infoBox span.info01{background-color: #E9F0FF; color: #5D8EFF;}
 .productBox .productList li .textBox .infoBox span.info02{background-color: #EBFAF9; color: #39B9B3;}
-.productBox .productList li .textBox .infoBox span.info03{background-color: #E9F0FF; color: #5D8EFF;}
-
-
-
-
-
+.productBox .productList li .textBox .infoBox span.info03{background-color: #ece6ff; color: #a777e5;}
 .productBox .productList li.deadlineBox a,
 .productBox .productList li.deadlineBox .infoListBox{opacity: .5;}
 .productBox .productList li.deadlineBox a{background-color: #ddd; pointer-events: none !important;}
@@ -369,7 +364,7 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 .productBox .productList li.deadlineBox .textBox p strong{color: #a5a5a5;}
 .productBox .productList li .textBox h4{margin-bottom: 13px; font-size: 36px; color: #333D4B; font-weight: 700; line-height: 1.3;}
 .productBox .productList li .textBox h4 span{display: block; font-size: 26px;color: #5D8EFF;}
-.productBox .productList li .textBox p{font-size: 24px; font-weight: 700; color: #12124F; word-break: keep-all;}
+.productBox .productList li .textBox p{font-size: 20px; font-weight: 700; color: #12124F; word-break: keep-all;}
 .productBox .productList li .textBox p strong{color: #5D8EFF;}
 .productBox .productList li .infoListBox{display: flex; flex-wrap: wrap; gap: 30px 0; padding: 42px 20px; background-color: #FBFBFB; text-align: center;}
 .productBox .productList li .infoListBox .box{width: 33.33%;}
@@ -388,13 +383,14 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 .productBox .productList li .percentBox .percent{width: 100%; height: 18px; background-color: #efefef; border-radius: 10px; overflow: hidden;}
 .productBox .productList li .percentBox .percent em{padding-right: 20px; justify-content: flex-end; display: flex; align-items: center; height: 100%; background-color: #5D8EFF; border-radius: 10px; color: #fff; font-size: 14px;} 
 
-
 @media (max-width: 1024px){
 
+  .productBox .productList li{width: 100%;}
   .productBox .productList li a .badge{width: 90px;}
   .productBox .productList li .textBox{min-height: auto; padding: 40px 30px 25px;}
-  .productBox .productList li .textBox h4{font-size: 26px;}
-  .productBox .productList li .textBox p{font-size: 18px;}
+  .productBox .productList li .textBox h4{margin-bottom: 8px; font-size: 26px; text-align: center;}
+  .productBox .productList li .textBox h4 span{font-size: 20px;}
+  .productBox .productList li .textBox p{font-size: 18px; text-align: center;}
   .productBox .productList li .infoListBox .box strong{font-size: 22px;}
   .productBox .productList li .infoListBox .box span{margin-bottom: 10px;}
   
@@ -417,12 +413,13 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
   .productBox .top{height: 200px;}
   .productBox .top::after{top: 50%; transform: translateY(-50%); width: 200px; height: 135px;}
   
-  .productBox .productList li{width: 100%;}
+
   .productBox .productList li a .badge{width: 70px;}
   .productBox .productList li .textBox .infoBox{gap: 0 8px; margin-bottom: 20px;}
-  .productBox .productList li .textBox{padding: 30px 20px 25px;}
-  .productBox .productList li .textBox h4{font-size: 24px; text-align: center;}
-  .productBox .productList li .textBox p{font-size: 16px; text-align: center;}
+  .productBox .productList li .textBox{padding: 30px 20px 20px;}
+  .productBox .productList li .textBox h4{margin-bottom: 4px; font-size: 24px;}
+  .productBox .productList li .textBox h4 span{font-size: 18px;}
+  .productBox .productList li .textBox p{font-size: 16px;}
   .productBox .productList li .infoListBox .box strong{font-size: 18px;}
   .productBox .productList li .infoListBox .box span{margin-bottom: 5px;}
 
@@ -444,11 +441,11 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
   .productBox .top span{font-size: 16px;}
   .productBox .top .title{font-size: 22px;}
 
-  .productBox .productList li .textBox{padding: 25px 20px;}
+  .productBox .productList li .textBox{padding: 25px 20px 15px;}
   .productBox .productList li .textBox .infoBox{margin-bottom: 15px;}
   .productBox .productList li .infoListBox{padding: 30px 15px;}
   .productBox .productList li .textBox .infoBox span{font-size: 14px; border-radius: 5px;}
-  .productBox .productList li .textBox h4{margin-bottom: 8px; font-size: 20px;}
+  .productBox .productList li .textBox h4{font-size: 20px;}
   .productBox .productList li .textBox p{font-size: 14px;}
   .productBox .productList li .infoListBox .box strong{font-size: 16px;}
   .productBox .productList li a .badge{width: 90px;}
@@ -461,6 +458,7 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
   .productBox .productList li .percentBox .topTextBox{margin-bottom: 10px;}
   
   .infoTextBox h4{font-size: 20px;}
+  .productBox .productList li .textBox h4 span{font-size: 16px;}
   .infoTextBox .box{margin-bottom: 15px;}
   .infoTextBox{padding: 25px 20px;}
   
