@@ -391,10 +391,10 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 
 .productBox .productList li a.new::after{background-color: #0e3a9f;}
 .productBox .productList li a.new .ribbon{background: #0e3a9f;}
-.productBox .productList li a.best::after{background-color: #499d40;}
-.productBox .productList li a.best .ribbon{background-color: #499d40;}
-.productBox .productList li a.basic::after{background-color: #c72533; }
-.productBox .productList li a.basic .ribbon{background-color: #c72533; }
+.productBox .productList li a.basic::after{background-color: #499d40;}
+.productBox .productList li a.basic .ribbon{background-color: #499d40;}
+.productBox .productList li a.best::after{background-color: #c72533; }
+.productBox .productList li a.best .ribbon{background-color: #c72533; }
 
 @media (max-width: 1199px){
 
