@@ -31,7 +31,7 @@ $(function () {
     accessibility: false,
     draggable: true,
     infinite: true,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     zIndex: 1000,
     pauseOnHover: false,
@@ -39,6 +39,20 @@ $(function () {
     speed: 1500,
     prevArrow: $('.newsBox .controlBox .prev'),
     nextArrow: $('.newsBox .controlBox .next'),
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   });
 
   //비전 탭
@@ -111,5 +125,37 @@ $(function () {
   $('.productModalCloseBtn01').click(function () {
     $('.productModalWrap01').removeClass('active');
   })
+
+  //이벤트 슬라이드 영역 
+  $(".eventListBox .slick").slick({
+    autoplay: false,
+    arrows: true,
+    dots: true,
+    accessibility: false,
+    draggable: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    zIndex: 1000,
+    pauseOnHover: false,
+    autoplaySpeed: 5000,
+    speed: 1500,
+    prevArrow: $('.eventListBox .comControl .prev'),
+    nextArrow: $('.eventListBox .comControl .next'),
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
 
 });

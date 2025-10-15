@@ -231,3 +231,24 @@
   #footerWrap .footerInfoList .infoBox .box span{display: block;}
 
 }
+
+.slick-dots{margin-top: 100px; display: flex!important; flex-wrap: wrap; gap: 0 20px; align-items: center; justify-content: center; width: 100%;}
+.slick-dots li.slick-active button{width: 50px; background: #5D8EFF;}
+.slick-dots li button{display: block; width: 20px; height: 15px; text-indent: -9999px; border-radius: 50px; background-color:#EAEAEA; cursor: pointer;}
+.comControl button{position: absolute; top: 85px; width: 20px; height: 38px;}
+.comControl .prev{left:-65px;  background: url(../images/main/arrow_icon03.svg)no-repeat center; transform: rotate(-180deg);}
+.comControl .next{right:-65px;  background: url(../images/main/arrow_icon03.svg)no-repeat center;}
+
+@media (max-width: 1199px){
+
+  .comControl{display: none!important;}
+
+}
+
+@media (max-width: 1024px){
+
+  .slick-dots{margin-top: 35px; gap: 0 10px;}
+  .slick-dots li button{width: 10px; height: 10px;}
+  .slick-dots li.slick-active button{width: 20px;}
+
+}
