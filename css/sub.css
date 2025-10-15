@@ -526,18 +526,23 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 .productDetailBox .infoBox_03 .infoList li:last-child::after{display: none;}
 .productDetailBox .infoBox_03 .infoList li span{display: block; margin-bottom: 10px; font-size: 20px; font-weight: 600; color: #fff;} 
 .productDetailBox .infoBox_03 .infoList li strong{display: block; font-size: 20px; color: #fff;}
-.productDetailBox .titleBox_01{position: relative; margin-bottom: 50px; padding: 80px 20px 75px;  border-radius: 32px; z-index: 1; overflow: hidden;}
-.productDetailBox .titleBox_01::after{content: ''; position: absolute; top:0; left:0; right:0; bottom: 0;background: url(../images/sub/bg.png) no-repeat center; background-size: cover; z-index: -1;}
+.productDetailBox .titleBox_01{position: relative; margin-bottom: 50px; padding: 50px 20px 40px;  border-radius: 32px; z-index: 1; overflow: hidden; background: url(../images/sub/detail_img20.jpg)no-repeat center;}
 .productDetailBox .titleBox_02{position: relative; padding: 40px 20px 35px!important; border-radius: 20px!important;}
 .productDetailBox .titleBox_02::after{background: url(../images/sub/sub_bg01.jpg)no-repeat center bottom; background-size: cover; z-index: -2;}
 .productDetailBox .titleBox_02::before{content: ''; position: absolute; top:0; left:0; right:0; bottom: 0; background-color: rgba(0,0,0,.1); z-index: -1;}
 .productDetailBox .titleBox_02 .title_0102{padding: 0;}
 .productDetailBox .titleBox_02 h3{font-size: 26px!important; line-height: 1.4!important; text-align: left!important;}
 .productDetailBox .titleBox_02 span{text-align: left!important; font-size: 20px!important; font-weight: 700!important; color: #fff!important;}
+.productDetailBox .titleBox_01 .infoListBox{padding: 20px; max-width: 369px; margin: 0 auto; background-color: rgba(255, 255, 255, .2); border-radius: 10px;}
+.productDetailBox .titleBox_01 .infoList{text-align: left;}
+.productDetailBox .titleBox_01 .infoList li{display: flex; align-items: center; gap: 0 20px; margin-bottom: 12px;}
+.productDetailBox .titleBox_01 .infoList li:last-child{margin-bottom: 0;}
+.productDetailBox .titleBox_01 .infoList li span{ width: 150px; height: 35px; line-height: 35px; text-align: center; background-color: #fff; border-radius: 50px; color: #333; font-weight: 700; font-size: 18px;}
+.productDetailBox .titleBox_01 .infoList li strong{color: #fff; font-size: 18px;}
 .productDetailBox .titleBox_01.active::after{transform: scale(1);}
-.productDetailBox .titleBox_01 .title_0102 {line-height: 1.2;}
-.productDetailBox .titleBox_01 .title_0102 span{display: block; margin-bottom: 8px; text-align: center; font-size: 24px; font-weight: 500; color: #fff; text-transform: uppercase;}
-.productDetailBox .titleBox_01 .title_0102 h3{width: 100%; text-align: center; color: #fff; font-size: 80px; font-weight: 900;}
+.productDetailBox .titleBox_01 .title_0102 {margin-bottom: 26px; line-height: 1.2;}
+.productDetailBox .titleBox_01 .title_0102 span{display: block; margin-bottom: 8px; text-align: center; font-size: 20px; font-weight: 500; color: #fff; text-transform: uppercase;}
+.productDetailBox .titleBox_01 .title_0102 h3{width: 100%; text-align: center; color: #fff; font-size: 36px; font-weight: 900;}
 .productDetailBox .titleBox_01 .title_0102 em{display: block; width: 236px; height: 48px; line-height: 48px; margin: 0 auto; border-radius: 8px; font-weight: 600; font-size: 20px; color: #fff; background-color: #222; text-align: center; letter-spacing: -1px;} 
 .productDetailBox .titleBox_01 .titleInfoList_0103{display: flex; align-items: center; }
 .productDetailBox .titleBox_01 .titleInfoList_0103 li{position: relative; display: flex; flex-direction: column; justify-content: center; flex:1; height: 183px; background-color: #fff;}
@@ -586,7 +591,9 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
   .productDetailBox .titleBox_02 span,
   .productDetailBox .titleBox_02 h3{text-align: center!important;}
   .productDetailBox .infoBox_02 .infoList_0202 li{padding: 20px; align-items: center;}
-  .productDetailBox .titleBox_01 .title_0102 h3{font-size: 24px!important;}
+  .productDetailBox .titleBox_01 .title_0102 h3{font-size: 32px!important;}
+  .productDetailBox .titleBox_02 .title_0102{margin-bottom: 0!important;}
+  .productDetailBox .titleBox_02 .title_0102 h3{font-size: 26px!important;}
   .productDetailBox .titleBox_01{padding: 50px 20px; border-radius: 20px;}
   .productDetailBox .infoBox_02 .infoBox strong{font-size: 26px;}
   .productDetailBox .infoBox_02 .infoList_0202 li span,
@@ -615,7 +622,10 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
   .productDetailBox .infoBox_02{margin-bottom: 45px;}
   .productDetailBox .infoBox_02 .sectionText{margin-bottom: 10px;}
   .productDetailBox .titleBox_01 .title_0102 span{font-size: 18px;}
-  .productDetailBox .titleBox_01 .title_0102 h3{font-size: 20px!important;}
+  .productDetailBox .titleBox_01 .title_0102 h3{font-size: 28px!important;}
+  .productDetailBox .titleBox_02 .title_0102 h3{font-size: 24px!important;}
+  .productDetailBox .titleBox_01 .infoList li span,
+  .productDetailBox .titleBox_01 .infoList li strong{font-size: 16px;}
   .productDetailBox .titleBox_01{padding: 50px 20px 45px; border-radius: 15px;}
   .productDetailBox .infoBox_02 .infoBox strong{font-size: 22px;}
   .productDetailBox .infoBox_02 .infoList_0202 li span,
@@ -644,8 +654,11 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
 @media (max-width: 480px){
 
   .productDetailBox .infoBox_05 .box{margin-bottom: 50px;}
+  .productDetailBox .titleBox_01 .infoListBox{padding: 30px 0 20px;}
+  .productDetailBox .titleBox_01 .infoList li{margin-bottom: 20px; flex-direction: column; gap :10px 0;}
   .productDetailBox .titleBox_01 .title_0102 span{font-size: 16px;}
-  .productDetailBox .titleBox_01 .title_0102 h3{font-size: 18px!important;}
+  .productDetailBox .titleBox_01 .title_0102 h3{font-size: 26px!important;}
+  .productDetailBox .titleBox_02 .title_0102 h3{font-size: 22px!important;}
   .productDetailBox .titleBox_01{padding:40px 20px 35px; border-radius: 10px;}
   .productDetailBox .infoBox_02 .infoBox strong{font-size: 18px;}
   .productDetailBox .infoBox_02 .infoList_0202 li span,
@@ -659,6 +672,7 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
   .productDetailBox .infoBox_05{padding: 50px 30px;}
   .productDetailBox .infoBox_02 .infoList_0202 li strong{font-size: 14px;}
   .productDetailBox .infoBox_02 .infoList_0202 li strong br{display: none;}
+  .productDetailBox .titleBox_02{background-position-x: -600px;}
 
   .detail_btn{font-size: 14px;}
 
@@ -667,12 +681,6 @@ button:disabled{background-color: #F4F4F4; border: 1px solid #E6E6E6; color: #B3
   .productDetailBox .infoBox_03 .infoList{padding: 35px 15px 30px; gap: 34px 0;}
   .productDetailBox .infoBox_03 .infoList li span{margin-bottom: 5px; font-size: 14px;}
   .productDetailBox .infoBox_03 .infoList li strong{font-size: 16px;}
-
-}
-
-@media (max-width: 414px){
-
-
 
 }
 
